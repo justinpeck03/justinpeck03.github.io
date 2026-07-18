@@ -1,0 +1,774 @@
+{
+  "name": "Justin Peck",
+  "contact": "justinpeck03@gmail.com | (203) 448-8268",
+  "license": "UCI Elite (02/15/2003)",
+  "background": [
+    "I was introduced to cycling at a young age, and grew up racing BMX and Cyclocross. In high school I joined my local NICA team, Santa Cruz Mountains Cycling, and found my passion in cross country mountain bike racing. I was selected as one of four seniors across the nation to receive the 2021 Sparkle On Scholarship from Kate Courtney, inspiring me to take my racing to the next level in college.",
+    "Throughout my 4 years at UC Berkeley, I continued to train and travel to UCI races across North America. I chased improvements in my results, and became a Collegiate Mountain Bike and Cyclocross National Champion in 2024 & 2025. I competed in the U23 Lifetime Grand Prix in 2025, and will be racing XCO with a focus on the UCI MTB World Cups in 2026. Outside of racing, I have interned as a design engineer at SRAM and Rockshox, and will be attending CU Boulder for my MS in Mechanical Engineering through 2028."
+  ],
+  "top_results": [
+    {
+      "placing": "1st",
+      "race": "2026 Stetina\u2019s Paydirt Gravel",
+      "category": "Pro Men"
+    },
+    {
+      "placing": "5th",
+      "race": "2026 BC Bike Stage Race",
+      "category": "Pro Men"
+    },
+    {
+      "placing": "1st",
+      "race": "2025 Collegiate MTB XCO & Omnium",
+      "category": "Club Men"
+    },
+    {
+      "placing": "4th",
+      "race": "2025 Lifetime Sea Otter Gravel",
+      "category": "U23 Men"
+    },
+    {
+      "placing": "2nd",
+      "race": "2025 Missoula XCO",
+      "category": "UCI U23 Men"
+    },
+    {
+      "placing": "7th",
+      "race": "2025 U23 Lifetime Gran Prix Overall",
+      "category": "U23 Men"
+    },
+    {
+      "placing": "7th",
+      "race": "2024 US MTB Nationals XCO",
+      "category": "UCI U23 Men"
+    },
+    {
+      "placing": "1st",
+      "race": "2024 Collegiate MTB Nationals XCO",
+      "category": "Club Men"
+    },
+    {
+      "placing": "1st",
+      "race": "2024 Collegiate Cyclocross Nationals",
+      "category": "Club Men"
+    }
+  ],
+  "schedule": {
+    "heading": "2026 Schedule - Key Events",
+    "events": [
+      {
+        "month": "February",
+        "dates": "22-25",
+        "event": "Tropical Mountain Bike Challenge",
+        "location": "Salinas, Puerto Rico"
+      },
+      {
+        "month": "February",
+        "dates": "28-1",
+        "event": "Puerto Rico MTB Cup",
+        "location": "Rinc\u00f3n, Puerto Rico"
+      },
+      {
+        "month": "March",
+        "dates": "18-21",
+        "event": "US Pro Cup Arkansas",
+        "location": "Fayetteville, Arkansas"
+      },
+      {
+        "month": "April",
+        "dates": "10-11",
+        "event": "US Pro Cup Vail Lake",
+        "location": "Temecula, California"
+      },
+      {
+        "month": "April",
+        "dates": "19",
+        "event": "Sea Otter Fuego XC",
+        "location": "Monterey, California"
+      },
+      {
+        "month": "May",
+        "dates": "2-4",
+        "event": "Moab Rocks MTB Stage Race",
+        "location": "Moab, Utah"
+      },
+      {
+        "month": "May",
+        "dates": "9",
+        "event": "Grand Junction Rides and Vibes",
+        "location": "Grand Junction, Colorado"
+      },
+      {
+        "month": "May",
+        "dates": "16",
+        "event": "Stetina\u2019s Paydirt",
+        "location": "Carson City, Nevada"
+      },
+      {
+        "month": "May",
+        "dates": "23-29",
+        "event": "BC Bike Race",
+        "location": "Vancouver Island, British Columbia"
+      },
+      {
+        "month": "June",
+        "dates": "14",
+        "event": "Leogang UCI World Cup XCO",
+        "location": "Leogang, Austria"
+      },
+      {
+        "month": "June",
+        "dates": "21",
+        "event": "Lenzerheide UCI World Cup XCO",
+        "location": "Lenzerheide, Switzerland"
+      },
+      {
+        "month": "July",
+        "dates": "5",
+        "event": "La Thuile UCI World Cup XCO",
+        "location": "La Thuile, Italy"
+      },
+      {
+        "month": "July",
+        "dates": "12",
+        "event": "Andorra UCI World Cup XCO",
+        "location": "Pal Arinsal, Andorra"
+      },
+      {
+        "month": "July",
+        "dates": "16-18",
+        "event": "US Mountain Bike Nationals",
+        "location": "Roanoke, Virginia"
+      },
+      {
+        "month": "August",
+        "dates": "8-9",
+        "event": "Downieville Classic",
+        "location": "Downieville, California"
+      },
+      {
+        "month": "September - December",
+        "note": "Collegiate MTB & Cyclocross Calendar TBD"
+      }
+    ]
+  },
+  "season_result_headings": [
+    "2026 Season Results",
+    "2025 Season Results",
+    "2024 Season Results"
+  ],
+  "results_by_season": {
+    "2026": [
+      {
+        "placing": "1",
+        "race": "Old Man Winter Rally",
+        "category": "Pro Men",
+        "date": "February 1"
+      },
+      {
+        "placing": "30",
+        "race": "Puerto Rico Tropical MTB Challenge XCO HC",
+        "category": "UCI Elite Men",
+        "date": "February 22"
+      },
+      {
+        "placing": "30",
+        "race": "Puerto Rico Tropical MTB Challenge XCO CS",
+        "category": "UCI Elite Men",
+        "date": "February 25"
+      },
+      {
+        "placing": "17",
+        "race": "Puerto Rico MTB Cup XCC",
+        "category": "UCI Elite Men",
+        "date": "February 28"
+      },
+      {
+        "placing": "20",
+        "race": "Puerto Rico MTB Cup XCO C1",
+        "category": "UCI Elite Men",
+        "date": "March 1"
+      },
+      {
+        "placing": "26",
+        "race": "Mid South Gravel",
+        "category": "Pro Men",
+        "date": "March 13"
+      },
+      {
+        "placing": "22",
+        "race": "US Pro Cup Arkansas XCO C1",
+        "category": "UCI Elite Men",
+        "date": "March 18"
+      },
+      {
+        "placing": "22",
+        "race": "US Pro Cup Arkansas XCO HC",
+        "category": "UCI Elite Men",
+        "date": "March 21"
+      },
+      {
+        "placing": "19",
+        "race": "US Pro Cup California XCO C1",
+        "category": "UCI Elite Men",
+        "date": "April 11"
+      },
+      {
+        "placing": "5",
+        "race": "Sea Otter Classic Fuego XC",
+        "category": "Pro Men",
+        "date": "April 19"
+      },
+      {
+        "placing": "7",
+        "race": "Boulder Roubaix",
+        "category": "Pro/1/2 Men",
+        "date": "April 26"
+      },
+      {
+        "placing": "2",
+        "race": "Moab Rocks MTB Stage Race",
+        "category": "Pro Men",
+        "date": "May 2-4"
+      },
+      {
+        "placing": "3",
+        "race": "Grand Junction Rides and Vibes MTB",
+        "category": "Pro Men",
+        "date": "May 9"
+      },
+      {
+        "placing": "1",
+        "race": "Stetina\u2019s Paydirt Gravel",
+        "category": "Pro Men",
+        "date": "May 16"
+      },
+      {
+        "placing": "5",
+        "race": "BC Bike MTB Stage Race",
+        "category": "Pro Men",
+        "date": "May 23-29"
+      },
+      {
+        "placing": "68",
+        "race": "UCI MTB World Cup Leogang XCO",
+        "category": "UCI Elite Men",
+        "date": "June 14"
+      }
+    ],
+    "2025": [
+      {
+        "placing": "2",
+        "race": "CCCX MTB #4",
+        "category": "Pro Men",
+        "date": "February 16"
+      },
+      {
+        "placing": "14",
+        "race": "Puerto Rico Tropical MTB Challenge, Salinas, XCO",
+        "category": "UCI U23 Men",
+        "date": "February 19"
+      },
+      {
+        "placing": "23",
+        "race": "Puerto Rico Tropical MTB Challenge, Salinas, XCC",
+        "category": "UCI Elite Men",
+        "date": "February 21"
+      },
+      {
+        "placing": "10",
+        "race": "Puerto Rico Tropical MTB HC, Salinas, XCO",
+        "category": "UCI U23 Men",
+        "date": "February 23"
+      },
+      {
+        "placing": "11",
+        "race": "Puerto Rico MTB Cup, Rincon, XCC",
+        "category": "UCI Elite Men",
+        "date": "February 28"
+      },
+      {
+        "placing": "16",
+        "race": "Puerto Rico MTB Cup, Rincon, XCO",
+        "category": "UCI Elite Men",
+        "date": "March 1"
+      },
+      {
+        "placing": "27",
+        "race": "Orange Seal Pro Cup, Vail Lake, short track",
+        "category": "UCI Elite Men",
+        "date": "March 7"
+      },
+      {
+        "placing": "4",
+        "race": "Orange Seal Pro Cup, Vail Lake, XC",
+        "category": "UCI U23 Men",
+        "date": "March 8"
+      },
+      {
+        "placing": "2",
+        "race": "Grasshopper Lake Sonoma MTB",
+        "category": "Pro Men",
+        "date": "March 28"
+      },
+      {
+        "placing": "4",
+        "race": "Sea Otter Lifetime Gravel",
+        "category": "LifeTime U23 Men",
+        "date": "April 10"
+      },
+      {
+        "placing": "3",
+        "race": "Sea Otter Fuego XC MTB",
+        "category": "Pro Men",
+        "date": "April 13"
+      },
+      {
+        "placing": "15",
+        "race": "Levi's Granfondo Growler Elite",
+        "category": "U23 Men",
+        "date": "April 19"
+      },
+      {
+        "placing": "1",
+        "race": "Ukiah Mendo Gravel Epic",
+        "category": "Pro Men",
+        "date": "April 27"
+      },
+      {
+        "placing": "6",
+        "race": "King Ridge Grasshopper",
+        "category": "Pro Men",
+        "date": "May 10"
+      },
+      {
+        "placing": "1",
+        "race": "Stetina Paydirt Gravel",
+        "category": "Pro Men",
+        "date": "May 17"
+      },
+      {
+        "placing": "4",
+        "race": "Unbound 100 Gravel",
+        "category": "LifeTime U23 Men",
+        "date": "May 31"
+      },
+      {
+        "placing": "4",
+        "race": "Lost and Found Gravel",
+        "category": "Pro Men",
+        "date": "June 14"
+      },
+      {
+        "placing": "2",
+        "race": "Missoula XCO UCI C1",
+        "category": "UCI U23 Men",
+        "date": "June 21"
+      },
+      {
+        "placing": "5",
+        "race": "Missoula XCC UCI C3",
+        "category": "UCI Elite Men",
+        "date": "June 22"
+      },
+      {
+        "placing": "18",
+        "race": "Soldier Hollow US Pro Cup, MTB, Short Track",
+        "category": "UCI Elite Men",
+        "date": "June 27"
+      },
+      {
+        "placing": "11",
+        "race": "Soldier Hollow US Pro Cup, MTB, XCO",
+        "category": "UCI U23 Men",
+        "date": "June 29"
+      },
+      {
+        "placing": "13",
+        "race": "US National Championships, MTB Marathon",
+        "category": "UCI Elite Men",
+        "date": "July 14"
+      },
+      {
+        "placing": "11",
+        "race": "US National Championships, MTB Short Track",
+        "category": "UCI U23 Men",
+        "date": "July 17"
+      },
+      {
+        "placing": "11",
+        "race": "US National Championships, MTB XC",
+        "category": "UCI U23 Men",
+        "date": "July 19"
+      },
+      {
+        "placing": "8",
+        "race": "Leadville 100 MTB",
+        "category": "LifeTime U23 Men",
+        "date": "August 9"
+      },
+      {
+        "placing": "8",
+        "race": "Breck Epic Stage Race",
+        "category": "Pro Men",
+        "date": "August 10-15"
+      },
+      {
+        "placing": "4",
+        "race": "Chequamegon 40 MTB",
+        "category": "LifeTime U23 Men",
+        "date": "September 13"
+      },
+      {
+        "placing": "1",
+        "race": "Ashland Enduro",
+        "category": "Expert Men",
+        "date": "September 27"
+      },
+      {
+        "placing": "1",
+        "race": "Cal Poly Humboldt Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "October 4"
+      },
+      {
+        "placing": "17",
+        "race": "Collegiate MTB Nationals XCC",
+        "category": "Collegiate Men Club",
+        "date": "October 9"
+      },
+      {
+        "placing": "1",
+        "race": "Collegiate MTB Nationals XCO",
+        "category": "Collegiate Men Club",
+        "date": "October 9"
+      },
+      {
+        "placing": "2",
+        "race": "Collegiate MTB Nationals DH",
+        "category": "Collegiate Men Club",
+        "date": "October 10"
+      },
+      {
+        "placing": "1",
+        "race": "Collegiate MTB Nationals Omnium",
+        "category": "Collegiate Men Club",
+        "date": "October 12"
+      },
+      {
+        "placing": "1",
+        "race": "Chico Collegiate Super D",
+        "category": "Collegiate Men A",
+        "date": "October 18"
+      },
+      {
+        "placing": "3",
+        "race": "Surf City Cyclocross",
+        "category": "Pro Men",
+        "date": "October 25"
+      },
+      {
+        "placing": "2",
+        "race": "Surf City Cyclocross",
+        "category": "Pro Men",
+        "date": "October 25"
+      },
+      {
+        "placing": "1",
+        "race": "Cal Poly SLO Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "November 1"
+      },
+      {
+        "placing": "2",
+        "race": "SJSU Exchequer Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "November 8"
+      },
+      {
+        "placing": "1",
+        "race": "UCSC Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "November 15"
+      }
+    ],
+    "2024": [
+      {
+        "placing": "19",
+        "race": "Low Gap Grasshopper Gravel",
+        "category": "Pro Men",
+        "date": "January 27"
+      },
+      {
+        "placing": "2",
+        "race": "Fort Ord Blastoff XC",
+        "category": "Pro Men",
+        "date": "February 17"
+      },
+      {
+        "placing": "23",
+        "race": "US Pro Cup Vail Lake XCC",
+        "category": "UCI Elite Men",
+        "date": "March 22"
+      },
+      {
+        "placing": "6",
+        "race": "US Pro Cup Vail Lake XCO",
+        "category": "UCI U23 Men",
+        "date": "March 23"
+      },
+      {
+        "placing": "1",
+        "race": "Crusher Cup XC Fort Ord",
+        "category": "Pro Men",
+        "date": "March 30"
+      },
+      {
+        "placing": "31",
+        "race": "US Pro Cup Fayetteville U23 XCO",
+        "category": "UCI U23 Men",
+        "date": "April 5"
+      },
+      {
+        "placing": "41",
+        "race": "US Pro Cup Fayetteville Elite XCO",
+        "category": "UCI Elite Men",
+        "date": "April 6"
+      },
+      {
+        "placing": "2",
+        "race": "Sea Otter XC",
+        "category": "Pro Men",
+        "date": "April 21"
+      },
+      {
+        "placing": "2",
+        "race": "Lake Sonoma Grasshopper",
+        "category": "Pro Men",
+        "date": "April 27"
+      },
+      {
+        "placing": "38",
+        "race": "Pan Ams XCC",
+        "category": "UCI Elite Men",
+        "date": "May 10"
+      },
+      {
+        "placing": "38",
+        "race": "Pan Ams XCO",
+        "category": "UCI U23 Men",
+        "date": "May 11"
+      },
+      {
+        "placing": "1",
+        "race": "Stetina\u2019s Paydirt",
+        "category": "Pro Men",
+        "date": "May 18"
+      },
+      {
+        "placing": "5",
+        "race": "Missoula XCO",
+        "category": "UCI Elite Men",
+        "date": "June 8"
+      },
+      {
+        "placing": "11",
+        "race": "Canada Cup Canmore XCO",
+        "category": "UCI Elite Men",
+        "date": "June 12"
+      },
+      {
+        "placing": "21",
+        "race": "Canada Cup Canmore XCC",
+        "category": "UCI Elite Men",
+        "date": "June 13"
+      },
+      {
+        "placing": "10",
+        "race": "Canada Cup Canmore XCO",
+        "category": "UCI Elite Men",
+        "date": "June 15"
+      },
+      {
+        "placing": "1",
+        "race": "Crusher Cup XC Skyline",
+        "category": "Pro Men",
+        "date": "June 30"
+      },
+      {
+        "placing": "7",
+        "race": "Downieville Classic XC",
+        "category": "Pro Men",
+        "date": "July 13"
+      },
+      {
+        "placing": "7",
+        "race": "US MTB Nationals XCO",
+        "category": "UCI U23 Men",
+        "date": "July 20"
+      },
+      {
+        "placing": "7",
+        "race": "US MTB Nationals XCC",
+        "category": "UCI U23 Men",
+        "date": "July 21"
+      },
+      {
+        "placing": "2",
+        "race": "Crusher Cup XC Stafford Lake",
+        "category": "Pro Men",
+        "date": "July 27"
+      },
+      {
+        "placing": "9",
+        "race": "Virginia GoCross C1",
+        "category": "UCI Elite Men",
+        "date": "September 14"
+      },
+      {
+        "placing": "13",
+        "race": "Virginia GoCross C2",
+        "category": "UCI Elite Men",
+        "date": "September 15"
+      },
+      {
+        "placing": "26",
+        "race": "Rochester CX C1",
+        "category": "UCI Elite Men",
+        "date": "September 21"
+      },
+      {
+        "placing": "17",
+        "race": "Rochester CX C2",
+        "category": "UCI Elite Men",
+        "date": "September 22"
+      },
+      {
+        "placing": "64",
+        "race": "UCI MTB World Cup Lake Placid XCO",
+        "category": "UCI U23 Men",
+        "date": "September 28"
+      },
+      {
+        "placing": "53",
+        "race": "UCI MTB World Cup Mont Saint Anne XCO",
+        "category": "UCI U23 Men",
+        "date": "October 6"
+      },
+      {
+        "placing": "1",
+        "race": "UC Berkeley TDS Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "October 12"
+      },
+      {
+        "placing": "1",
+        "race": "UC Davis Skyline Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "October 20"
+      },
+      {
+        "placing": "2",
+        "race": "Surf City Cyclocross Day 1",
+        "category": "Pro Men",
+        "date": "October 26"
+      },
+      {
+        "placing": "3",
+        "race": "Surf City Cyclocross Day 2",
+        "category": "Pro Men",
+        "date": "October 27"
+      },
+      {
+        "placing": "18",
+        "race": "Missoula Cyclocross C2",
+        "category": "UCI Elite Men",
+        "date": "November 2"
+      },
+      {
+        "placing": "10",
+        "race": "Pan Am Cyclocross Championship",
+        "category": "UCI U23 Men",
+        "date": "November 3"
+      },
+      {
+        "placing": "1",
+        "race": "SJSU Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "November 9"
+      },
+      {
+        "placing": "1",
+        "race": "Collegiate MTB Nationals XCO",
+        "category": "Collegiate Men Club",
+        "date": "November 15"
+      },
+      {
+        "placing": "4",
+        "race": "Collegiate MTB Nationals XCC",
+        "category": "Collegiate Men Club",
+        "date": "November 16"
+      },
+      {
+        "placing": "1",
+        "race": "UCSC Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "November 23"
+      },
+      {
+        "placing": "1",
+        "race": "Bay Area Superprestige VSRT CX",
+        "category": "Pro Men",
+        "date": "November 30"
+      },
+      {
+        "placing": "1",
+        "race": "Cyclocross National Championship",
+        "category": "Club Men",
+        "date": "December 12"
+      },
+      {
+        "placing": "11",
+        "race": "Cyclocross National Championship",
+        "category": "U23 Men",
+        "date": "December 14"
+      },
+      {
+        "placing": "52",
+        "race": "Superprestige Mol",
+        "category": "UCI Elite Men",
+        "date": "December 23"
+      },
+      {
+        "placing": "50",
+        "race": "UCI Cyclocross World Cup Gavere",
+        "category": "UCI Elite Men",
+        "date": "December 26"
+      },
+      {
+        "placing": "53",
+        "race": "Exact Cross Loenhout",
+        "category": "UCI Elite Men",
+        "date": "December 27"
+      },
+      {
+        "placing": "49",
+        "race": "Superprestige Diegem",
+        "category": "UCI Elite Men",
+        "date": "December 30"
+      },
+      {
+        "placing": "27",
+        "race": "X2O Trofee Baal",
+        "category": "UCI U23 Men",
+        "date": "January 1"
+      },
+      {
+        "placing": "54",
+        "race": "UCI Cyclocross World Cup Dendermonde",
+        "category": "UCI Elite Men",
+        "date": "January 5"
+      }
+    ]
+  }
+}
