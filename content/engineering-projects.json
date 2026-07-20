@@ -71,30 +71,19 @@
     {
       "slug": "calfee-design-full-suspension-mountain-bike",
       "category": "Calfee Design",
-      "title": "Full Suspension Mountain Bike",
-      "description": "As a mechanical engineering intern at Calfee Design, I researched and developed their first full suspension mountain bike. After deciding on the concept of a flexible  carbon fiber frame, I plotted the virtual pivot points in 2D Linkage software to model the suspension kinematics including leverage ratios, anti squat, and anti rise.\n\nTaking the design into 3D, I started with frame geometry and linkage sketches, allowing the model to be updated for various frame sizes or custom geometry. The frame was designed to meet industry standard frame fit specifications, with clearance to any interference zones.",
+      "title": "Full Suspension Mountain Bike & Carbon Dropouts",
+      "description": "As a mechanical engineering intern at Calfee Design, I researched and developed their first full suspension mountain bike. After deciding on the concept of a flexible  carbon fiber frame, I plotted the virtual pivot points in 2D Linkage software to model the suspension kinematics including leverage ratios, anti squat, and anti rise.\n\nTaking the design into 3D, I started with frame geometry and linkage sketches, allowing the model to be updated for various frame sizes or custom geometry. The frame was designed to meet industry standard frame fit specifications, with clearance to any interference zones.\n\nAnother one of my intern projects at Calfee Design involved redesigning dropouts to be made in one piece using continuous carbon fiber from the chainstays. The drive side (DS) dropout was designed to meet the universal derailleur hanger specification, and the non drive side (NDS) dropout includes an ISO standard post mount for the rear brake.\n\nAfter modeling the dropouts, I designed molds for each side. Each half forms the critical geometry, while the shim spacers help compress the carbon and form the undercut on the NDS dropout. This design uses shoulder screws for the precision diameter holes and bolts for compression. I was responsible \nfor taking this project all the way to production, and coded \nthe CNC mill to machine the molds that we used to make \nthe first prototype dropouts.",
       "labels": [
-        "Linkage Software"
-      ],
-      "images": [
-        "assets/images/engineering/calfee-design-full-suspension-mountain-bike/01.png",
-        "assets/images/engineering/calfee-design-full-suspension-mountain-bike/02.jpg",
-        "assets/images/engineering/calfee-design-full-suspension-mountain-bike/03.png"
-      ],
-      "thumbnail": "assets/images/engineering/calfee-design-full-suspension-mountain-bike/01.png"
-    },
-    {
-      "slug": "calfee-design-carbon-fiber-dropouts",
-      "category": "Calfee Design",
-      "title": "Carbon Fiber Dropouts",
-      "description": "Another one of my intern projects at Calfee Design involved redesigning dropouts to be made in one piece using continuous carbon fiber from the chainstays. The drive side (DS) dropout was designed to meet the universal derailleur hanger specification, and the non drive side (NDS) dropout includes an ISO standard post mount for the rear brake.\n\nAfter modeling the dropouts, I designed molds for each side. Each half forms the critical geometry, while the shim spacers help compress the carbon and form the undercut on the NDS dropout. This design uses shoulder screws for the precision diameter holes and bolts for compression. I was responsible \nfor taking this project all the way to production, and coded \nthe CNC mill to machine the molds that we used to make \nthe first prototype dropouts.",
-      "labels": [
+        "Linkage Software",
         "NDS Dropout Mold",
         "DS Dropout Mold",
         "NDS Dropout",
         "DS Dropout"
       ],
       "images": [
+        "assets/images/engineering/calfee-design-full-suspension-mountain-bike/01.png",
+        "assets/images/engineering/calfee-design-full-suspension-mountain-bike/02.jpg",
+        "assets/images/engineering/calfee-design-full-suspension-mountain-bike/03.png",
         "assets/images/engineering/calfee-design-carbon-fiber-dropouts/01.png",
         "assets/images/engineering/calfee-design-carbon-fiber-dropouts/02.png",
         "assets/images/engineering/calfee-design-carbon-fiber-dropouts/03.png",
@@ -102,33 +91,23 @@
         "assets/images/engineering/calfee-design-carbon-fiber-dropouts/05.jpg",
         "assets/images/engineering/calfee-design-carbon-fiber-dropouts/06.jpg"
       ],
-      "thumbnail": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/01.png"
+      "thumbnail": "assets/images/engineering/calfee-design-full-suspension-mountain-bike/01.png"
     },
     {
       "slug": "bike-builders-of-berkeley-parametric-frame",
       "category": "Bike Builders of Berkeley",
-      "title": "Parametric Frame",
-      "description": "I was one of the founding members of Bike Builders of Berkeley when it started in Fall 2021. This new engineering club at UC Berkeley is a group of mechanical engineers and cyclists who all enjoy designing and building bikes.\n\nIn our first semester, we built a steel gravel frame. I designed a parametric model in Fusion 360 with all the driving dimensions as parameters. This allows other club members to enter custom geometry numbers into a table and have an accurate 3D CAD model of that frame.",
+      "title": "Parametric Frame & Welding Jig",
+      "description": "I was one of the founding members of Bike Builders of Berkeley when it started in Fall 2021. This new engineering club at UC Berkeley is a group of mechanical engineers and cyclists who all enjoy designing and building bikes.\n\nIn our first semester, we built a steel gravel frame. I designed a parametric model in Fusion 360 with all the driving dimensions as parameters. This allows other club members to enter custom geometry numbers into a table and have an accurate 3D CAD model of that frame.\n\nOne of the many challenges of building a good frame is designing a jig to accurately position the tubes during the welding process. Our latest jig uses aluminum extrusions with custom machined plates, adjustment blocks, and cones. With independent angles and translations, this jig is easy to adjust and can be used for a wide range of frame sizes.\n\nAs the design lead for this project, I made a CAD model of the complete jig assembly in Fusion 360. I also created a set of exploded view drawings with parts lists to help during the assembly process.",
       "labels": [],
       "images": [
         "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/01.jpg",
         "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/02.png",
-        "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/03.jpg"
-      ],
-      "thumbnail": "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/01.jpg"
-    },
-    {
-      "slug": "bike-builders-of-berkeley-welding-jig",
-      "category": "Bike Builders of Berkeley",
-      "title": "Welding Jig",
-      "description": "One of the many challenges of building a good frame is designing a jig to accurately position the tubes during the welding process. Our latest jig uses aluminum extrusions with custom machined plates, adjustment blocks, and cones. With independent angles and translations, this jig is easy to adjust and can be used for a wide range of frame sizes.\n\nAs the design lead for this project, I made a CAD model of the complete jig assembly in Fusion 360. I also created a set of exploded view drawings with parts lists to help during the assembly process.",
-      "labels": [],
-      "images": [
+        "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/03.jpg",
         "assets/images/engineering/bike-builders-of-berkeley-welding-jig/01.png",
         "assets/images/engineering/bike-builders-of-berkeley-welding-jig/02.jpg",
         "assets/images/engineering/bike-builders-of-berkeley-welding-jig/03.jpg"
       ],
-      "thumbnail": "assets/images/engineering/bike-builders-of-berkeley-welding-jig/02.jpg"
+      "thumbnail": "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/01.jpg"
     },
     {
       "slug": "bike-builders-of-berkeley-steel-full-suspension-mountain-bike",
