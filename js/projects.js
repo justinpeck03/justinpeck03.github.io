@@ -4,7 +4,10 @@
   const grid = document.getElementById("work-grid");
   if (!grid) return;
 
-  fetch("content/engineering-projects.json")
+  // `no-cache` = always revalidate with the server (via ETag) before using a
+  // cached copy, so edits to the JSON show up on the next load instead of
+  // being masked by a stale browser/CDN cache.
+  fetch("content/engineering-projects.json", { cache: "no-cache" })
     .then((res) => {
       if (!res.ok) throw new Error("HTTP " + res.status);
       return res.json();
