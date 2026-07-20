@@ -26,7 +26,8 @@
         "assets/images/engineering/sram-rockshox-rear-shock/06.png",
         "assets/images/engineering/sram-rockshox-rear-shock/07.jpg",
         "assets/images/engineering/sram-rockshox-rear-shock/08.png"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/sram-rockshox-rear-shock/02.png"
     },
     {
       "slug": "sram-front-derailleur",
@@ -47,7 +48,8 @@
         "assets/images/engineering/sram-front-derailleur/03.png",
         "assets/images/engineering/sram-front-derailleur/04.png",
         "assets/images/engineering/sram-front-derailleur/05.png"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/sram-front-derailleur/04.png"
     },
     {
       "slug": "apple-watch-ultra-2-and-series-10",
@@ -63,7 +65,8 @@
         "assets/images/engineering/apple-watch-ultra-2-and-series-10/01.jpg",
         "assets/images/engineering/apple-watch-ultra-2-and-series-10/02.jpg",
         "assets/images/engineering/apple-watch-ultra-2-and-series-10/03.png"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/apple-watch-ultra-2-and-series-10/01.jpg"
     },
     {
       "slug": "calfee-design-full-suspension-mountain-bike",
@@ -77,7 +80,8 @@
         "assets/images/engineering/calfee-design-full-suspension-mountain-bike/01.png",
         "assets/images/engineering/calfee-design-full-suspension-mountain-bike/02.jpg",
         "assets/images/engineering/calfee-design-full-suspension-mountain-bike/03.png"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/calfee-design-full-suspension-mountain-bike/01.png"
     },
     {
       "slug": "calfee-design-carbon-fiber-dropouts",
@@ -97,7 +101,8 @@
         "assets/images/engineering/calfee-design-carbon-fiber-dropouts/04.png",
         "assets/images/engineering/calfee-design-carbon-fiber-dropouts/05.jpg",
         "assets/images/engineering/calfee-design-carbon-fiber-dropouts/06.jpg"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/01.png"
     },
     {
       "slug": "bike-builders-of-berkeley-parametric-frame",
@@ -109,7 +114,8 @@
         "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/01.jpg",
         "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/02.png",
         "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/03.jpg"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/01.jpg"
     },
     {
       "slug": "bike-builders-of-berkeley-welding-jig",
@@ -121,7 +127,8 @@
         "assets/images/engineering/bike-builders-of-berkeley-welding-jig/01.png",
         "assets/images/engineering/bike-builders-of-berkeley-welding-jig/02.jpg",
         "assets/images/engineering/bike-builders-of-berkeley-welding-jig/03.jpg"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/bike-builders-of-berkeley-welding-jig/02.jpg"
     },
     {
       "slug": "bike-builders-of-berkeley-steel-full-suspension-mountain-bike",
@@ -133,7 +140,8 @@
         "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/01.png",
         "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/02.jpg",
         "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/03.jpg"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/03.jpg"
     },
     {
       "slug": "bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike",
@@ -147,7 +155,8 @@
         "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/03.jpg",
         "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/04.png",
         "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/05.png"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/01.jpg"
     },
     {
       "slug": "human-powered-vehicle-drivetrain",
@@ -171,7 +180,8 @@
         "assets/images/engineering/human-powered-vehicle-drivetrain/07.jpg",
         "assets/images/engineering/human-powered-vehicle-drivetrain/08.jpg",
         "assets/images/engineering/human-powered-vehicle-drivetrain/09.jpg"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/human-powered-vehicle-drivetrain/01.jpg"
     },
     {
       "slug": "uc-berkeley-meche-130-linkage-synthesis-and-analysis",
@@ -184,7 +194,8 @@
         "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/02.png",
         "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/03.png",
         "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/04.png"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/03.png"
     },
     {
       "slug": "uc-berkeley-meche-127-composites",
@@ -197,7 +208,8 @@
         "assets/images/engineering/uc-berkeley-meche-127-composites/02.jpg",
         "assets/images/engineering/uc-berkeley-meche-127-composites/03.png",
         "assets/images/engineering/uc-berkeley-meche-127-composites/04.png"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/uc-berkeley-meche-127-composites/02.jpg"
     },
     {
       "slug": "uc-berkeley-meche-102b-mechatronics-design",
@@ -212,7 +224,8 @@
         "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/02.jpg",
         "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/03.png",
         "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/04.png"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/01.png"
     },
     {
       "slug": "uc-berkeley-meche-100-rc-car-project",
@@ -223,7 +236,8 @@
       "images": [
         "assets/images/engineering/uc-berkeley-meche-100-rc-car-project/01.jpg",
         "assets/images/engineering/uc-berkeley-meche-100-rc-car-project/02.jpg"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/uc-berkeley-meche-100-rc-car-project/01.jpg"
     },
     {
       "slug": "uc-berkeley-meche-103-experimentation-and-measurements",
@@ -239,7 +253,8 @@
         "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/02.png",
         "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/03.jpg",
         "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/04.jpg"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/03.jpg"
     },
     {
       "slug": "uc-berkeley-engineering-29-cereal-cup-project",
@@ -253,7 +268,8 @@
         "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/01.jpg",
         "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/02.jpg",
         "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/03.jpg"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/02.jpg"
     },
     {
       "slug": "uc-berkeley-engineering-26-wind-turbine-project",
@@ -267,7 +283,8 @@
         "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/03.png",
         "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/04.jpg",
         "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/05.jpg"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/05.jpg"
     },
     {
       "slug": "eagle-scout-project-trailhead-signboard",
@@ -282,7 +299,8 @@
         "assets/images/engineering/eagle-scout-project-trailhead-signboard/04.jpg",
         "assets/images/engineering/eagle-scout-project-trailhead-signboard/05.jpg",
         "assets/images/engineering/eagle-scout-project-trailhead-signboard/06.jpg"
-      ]
+      ],
+      "thumbnail": "assets/images/engineering/eagle-scout-project-trailhead-signboard/03.jpg"
     }
   ]
 }
