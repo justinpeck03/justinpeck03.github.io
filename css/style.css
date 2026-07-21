@@ -191,6 +191,125 @@ a {
   border-top: 0.5px solid var(--hairline);
 }
 
+/* ---------- Project detail ---------- */
+.project {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+.project__header {
+  padding: 64px 0 0;
+}
+
+.project__back {
+  display: inline-block;
+  margin-bottom: 28px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  transition: color 0.2s var(--ease);
+}
+
+.project__back:hover {
+  color: var(--text-primary);
+}
+
+.project__eyebrow {
+  margin: 0 0 10px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.project__title {
+  margin: 0;
+  max-width: 900px;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.project__body {
+  max-width: 680px;
+  padding-top: 32px;
+}
+
+.project__body p {
+  margin: 0 0 22px;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #33333a;
+}
+
+.project__tags {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  max-width: 820px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project__tags li {
+  padding: 7px 15px;
+  background: var(--card-bg);
+  border-radius: 999px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 60px 0 8px;
+}
+
+.gallery__item {
+  margin: 0;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery__item img {
+  display: block;
+  max-width: 100%;
+  max-height: 78vh; /* keep tall portrait renders from dominating the page */
+  width: auto;
+  height: auto;
+  border-radius: 16px;
+  background: var(--card-bg);
+}
+
+.gallery__item figcaption {
+  margin-top: 12px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* "More projects" library at the bottom of a project page */
+.more {
+  max-width: var(--maxw);
+  margin: 88px auto 0;
+  padding: 64px 22px 96px;
+  border-top: 0.5px solid var(--hairline);
+}
+
+.more h2 {
+  margin: 0 0 32px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .work__grid {
@@ -215,6 +334,16 @@ a {
   .work__grid {
     grid-template-columns: 1fr;
     gap: 22px;
+  }
+  .project {
+    padding: 0 18px;
+  }
+  .project__header {
+    padding-top: 44px;
+  }
+  .more {
+    margin-top: 64px;
+    padding: 48px 18px 72px;
   }
   /* On touch screens there is no hover, so keep captions visible. */
   .card__caption {
