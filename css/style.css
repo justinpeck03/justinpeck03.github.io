@@ -310,11 +310,202 @@ a {
   letter-spacing: -0.01em;
 }
 
+/* ---------- About ---------- */
+.about {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 64px;
+  align-items: center;
+  padding: 72px 0 88px;
+}
+
+.about-intro__headline {
+  margin: 0 0 28px;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.03;
+}
+
+.about-intro__text p {
+  margin: 0 0 20px;
+  max-width: 30rem;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #33333a;
+}
+
+.about-intro__text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-intro__photo img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  background: var(--card-bg);
+}
+
+/* Two-column labeled section: label left, content right */
+.about-section {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 48px;
+  padding: 64px 0;
+  border-top: 0.5px solid var(--hairline);
+}
+
+.about-section__label {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.about-section__body {
+  max-width: 720px;
+}
+
+/* Shared entry (education / experience / interests) */
+.entry {
+  margin-bottom: 44px;
+}
+.entry:last-child {
+  margin-bottom: 0;
+}
+
+.entry__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px 20px;
+}
+
+.entry h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.entry__dates {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.entry__detail {
+  margin: 8px 0 0;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* Experience roles nested under a company */
+.role {
+  margin-top: 22px;
+}
+.role h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.role ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+}
+.role li {
+  margin-bottom: 8px;
+  color: #45454c;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* Skills */
+.skills-group {
+  margin-bottom: 32px;
+}
+.skills-group:last-child {
+  margin-bottom: 0;
+}
+.skills-group h4 {
+  margin: 0 0 14px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.pills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.pills li {
+  padding: 7px 15px;
+  background: var(--card-bg);
+  border-radius: 999px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Connect */
+.connect {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 88px 0 104px;
+  border-top: 0.5px solid var(--hairline);
+  text-align: center;
+}
+.connect__title {
+  margin: 0 0 12px;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.connect__lead {
+  margin: 0 auto 32px;
+  max-width: 32rem;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.connect__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.connect__link {
+  padding: 13px 26px;
+  border: 0.5px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.connect__link:hover {
+  background: var(--card-bg);
+  border-color: var(--text-muted);
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .work__grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 28px;
+  }
+  .about-section {
+    grid-template-columns: 150px 1fr;
+    gap: 32px;
   }
 }
 
@@ -344,6 +535,27 @@ a {
   .more {
     margin-top: 64px;
     padding: 48px 18px 72px;
+  }
+  .about {
+    padding: 0 18px;
+  }
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 44px 0 56px;
+  }
+  /* Show the photo above the bio on phones */
+  .about-intro__photo {
+    order: -1;
+    max-width: 320px;
+  }
+  .about-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 44px 0;
+  }
+  .connect {
+    padding: 56px 0 72px;
   }
   /* On touch screens there is no hover, so keep captions visible. */
   .card__caption {
