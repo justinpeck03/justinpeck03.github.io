@@ -109,7 +109,34 @@
     const frag = document.createDocumentFragment();
     projects
       .filter((p) => p.slug !== current.slug)
-      .forEach((p) => frag.appendChild(Portfolio.buildCard(p)));
+      .forEach((p) => frag.appendChild(Portfolio.buildRailCard(p)));
     moreGrid.appendChild(frag);
+    setupRailArrows(moreGrid);
+  }
+
+  // Wire the prev/next buttons to page the rail by one viewport width, and
+  // disable them at the start/end so it's clear when there's more to see.
+  function setupRailArrows(rail) {
+    const prev = document.querySelector(".more__arrow--prev");
+    const next = document.querySelector(".more__arrow--next");
+    if (!prev || !next) return;
+
+    function update() {
+      const max = rail.scrollWidth - rail.clientWidth;
+      prev.disabled = rail.scrollLeft <= 4;
+      next.disabled = rail.scrollLeft >= max - 4;
+    }
+
+    prev.addEventListener("click", () => {
+      rail.scrollBy({ left: -rail.clientWidth * 0.9, behavior: "auto" });
+      update();
+    });
+    next.addEventListener("click", () => {
+      rail.scrollBy({ left: rail.clientWidth * 0.9, behavior: "auto" });
+      update();
+    });
+    rail.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
   }
 })();

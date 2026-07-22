@@ -94,13 +94,21 @@ a {
   padding: 88px 22px 56px;
 }
 
+.hero__lede {
+  margin: 0 0 14px;
+  font-size: clamp(1.8rem, 4.5vw, 2.9rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
 .hero__text {
   margin: 0;
-  max-width: 760px;
-  font-size: clamp(1.6rem, 4vw, 2.6rem);
-  font-weight: 600;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  max-width: 640px;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-secondary);
 }
 
 /* ---------- Work grid ---------- */
@@ -307,19 +315,114 @@ a {
   text-align: center;
 }
 
-/* "More projects" library at the bottom of a project page */
+/* "More projects" horizontal-scroll rail at the bottom of a project page */
 .more {
   max-width: var(--maxw);
   margin: 88px auto 0;
-  padding: 64px 22px 96px;
+  padding: 56px 22px 96px;
   border-top: 0.5px solid var(--hairline);
 }
 
-.more h2 {
-  margin: 0 0 32px;
+.more__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.more__head h2 {
+  margin: 0;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -0.01em;
+}
+
+.more__nav {
+  display: flex;
+  gap: 10px;
+  flex: none;
+}
+
+.more__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 0.5px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--text-primary);
+  font-family: var(--font);
+  font-size: 1.05rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s var(--ease), border-color 0.2s var(--ease),
+    opacity 0.2s var(--ease);
+}
+
+.more__arrow:hover:not(:disabled) {
+  background: var(--card-bg);
+  border-color: var(--text-muted);
+}
+
+.more__arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* 2 rows x 6 columns per "page", scrolling horizontally for the rest */
+.more-rail {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-columns: calc((100% - 80px) / 6);
+  gap: 28px 16px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+
+.more-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.rail-card {
+  display: block;
+}
+
+.rail-card__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  background: var(--card-bg);
+  transition: transform 0.3s var(--ease);
+}
+
+.rail-card:hover .rail-card__img {
+  transform: scale(1.03);
+}
+
+.rail-card__caption {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 10px;
+}
+
+.rail-card__title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--text-primary);
+}
+
+.rail-card__category {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
 }
 
 /* ---------- About ---------- */
@@ -838,6 +941,10 @@ a {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+  /* Tablet: fewer, wider rail columns than the 6-up desktop layout */
+  .more-rail {
+    grid-auto-columns: calc((100% - 48px) / 3.3);
+  }
 }
 
 @media (max-width: 560px) {
@@ -866,6 +973,19 @@ a {
   .more {
     margin-top: 64px;
     padding: 48px 18px 72px;
+  }
+  .more__head {
+    margin-bottom: 20px;
+  }
+  .more__arrow {
+    width: 36px;
+    height: 36px;
+  }
+  /* Show ~2 columns per row with a peek of the next, so it reads as
+     scrollable without needing the arrow buttons. */
+  .more-rail {
+    grid-auto-columns: calc((100% - 16px) / 2.3);
+    gap: 20px 12px;
   }
   .about {
     padding: 0 18px;

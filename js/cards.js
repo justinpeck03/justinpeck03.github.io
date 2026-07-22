@@ -49,5 +49,32 @@ window.Portfolio = (function () {
     return a;
   }
 
-  return { PROJECTS_URL, escapeHtml, loadProjects, buildCard };
+  // Compact card for horizontal-scroll rails (e.g. "More projects"): image
+  // on top, plain caption below instead of a hover overlay.
+  function buildRailCard(project) {
+    const a = document.createElement("a");
+    a.className = "rail-card";
+    a.href = "project.html?slug=" + encodeURIComponent(project.slug);
+
+    const img = document.createElement("img");
+    img.className = "rail-card__img";
+    img.src = project.thumbnail;
+    img.alt = project.category + " — " + project.title;
+    img.loading = "lazy";
+    a.appendChild(img);
+
+    const caption = document.createElement("div");
+    caption.className = "rail-card__caption";
+    caption.innerHTML =
+      '<span class="rail-card__title">' +
+      escapeHtml(project.title) +
+      '</span><span class="rail-card__category">' +
+      escapeHtml(project.category) +
+      "</span>";
+    a.appendChild(caption);
+
+    return a;
+  }
+
+  return { PROJECTS_URL, escapeHtml, loadProjects, buildCard, buildRailCard };
 })();
