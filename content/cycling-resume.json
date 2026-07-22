@@ -7,20 +7,27 @@
     "assets/images/cycling/photo-1.png",
     "assets/images/cycling/photo-3.jpeg"
   ],
-  "follow_grid": [
-    "assets/images/cycling/photo-2.png",
-    "assets/images/cycling/photo-3.jpeg",
-    "assets/images/cycling/photo-1.png"
-  ],
   "team": {
-    "name": "Everyday Heros Real Estate Racing",
+    "name": "Everyday Heroes Real Estate Racing",
     "url": "https://www.losgatosbicycleracing.org",
     "logo": "assets/images/cycling/team/losgatos.jpg"
   },
   "sponsors": [
-    { "name": "BMC", "url": "https://www.bmc-switzerland.com", "logo": "assets/images/cycling/sponsors/bmc.png" },
-    { "name": "Wilderness Trail Bikes", "url": "https://www.wtb.com", "logo": "assets/images/cycling/sponsors/wtb.png" },
-    { "name": "Rudy Project", "url": "https://www.rudyproject.com", "logo": "assets/images/cycling/sponsors/rudy.png" }
+    {
+      "name": "BMC",
+      "url": "https://www.bmc-switzerland.com",
+      "logo": "assets/images/cycling/sponsors/bmc.png"
+    },
+    {
+      "name": "Wilderness Trail Bikes",
+      "url": "https://www.wtb.com",
+      "logo": "assets/images/cycling/sponsors/wtb.png"
+    },
+    {
+      "name": "Rudy Project",
+      "url": "https://www.rudyproject.com",
+      "logo": "assets/images/cycling/sponsors/rudy.png"
+    }
   ],
   "connect": {
     "email": "justinpeck03@gmail.com",
@@ -33,7 +40,7 @@
   "top_results": [
     {
       "placing": "1st",
-      "race": "2026 Stetina\u2019s Paydirt Gravel",
+      "race": "2026 Stetina’s Paydirt Gravel",
       "category": "Pro Men"
     },
     {
@@ -90,7 +97,7 @@
         "month": "February",
         "dates": "28-1",
         "event": "Puerto Rico MTB Cup",
-        "location": "Rinc\u00f3n, Puerto Rico"
+        "location": "Rincón, Puerto Rico"
       },
       {
         "month": "March",
@@ -125,7 +132,7 @@
       {
         "month": "May",
         "dates": "16",
-        "event": "Stetina\u2019s Paydirt",
+        "event": "Stetina’s Paydirt",
         "location": "Carson City, Nevada"
       },
       {
@@ -179,7 +186,10 @@
   "season_result_headings": [
     "2026 Season Results",
     "2025 Season Results",
-    "2024 Season Results"
+    "2024 Season Results",
+    "2023 Season Results",
+    "2022 Season Results",
+    "2021 Season Results"
   ],
   "results_by_season": {
     "2026": [
@@ -263,7 +273,7 @@
       },
       {
         "placing": "1",
-        "race": "Stetina\u2019s Paydirt Gravel",
+        "race": "Stetina’s Paydirt Gravel",
         "category": "Pro Men",
         "date": "May 16"
       },
@@ -585,7 +595,7 @@
       },
       {
         "placing": "1",
-        "race": "Stetina\u2019s Paydirt",
+        "race": "Stetina’s Paydirt",
         "category": "Pro Men",
         "date": "May 18"
       },
@@ -793,6 +803,685 @@
         "category": "UCI Elite Men",
         "date": "January 5"
       }
+    ],
+    "2023": [
+      {
+        "placing": "7",
+        "race": "Grasshopper Mendo Hopper Gravel",
+        "category": "Pro Men",
+        "date": "March 11"
+      },
+      {
+        "placing": "2",
+        "race": "TBF MTB Championships",
+        "category": "Pro Men",
+        "date": "March 26"
+      },
+      {
+        "placing": "36",
+        "race": "US Pro Cup Vail Lake STXC",
+        "category": "UCI Elite Men",
+        "date": "March 31"
+      },
+      {
+        "placing": "13",
+        "race": "US Pro Cup Vail Lake XCO",
+        "category": "UCI U23 Men",
+        "date": "April 2"
+      },
+      {
+        "placing": "32",
+        "race": "US Pro Cup Fayetteville XCO",
+        "category": "UCI U23 Men",
+        "date": "April 12"
+      },
+      {
+        "placing": "34",
+        "race": "US Pro Cup Fayetteville STXC",
+        "category": "UCI Elite Men",
+        "date": "April 14"
+      },
+      {
+        "placing": "22",
+        "race": "US Pro Cup Fayetteville XCO",
+        "category": "UCI U23 Men",
+        "date": "April 15"
+      },
+      {
+        "placing": "3",
+        "race": "Sea Otter Classic Fuego XC",
+        "category": "Elite Men",
+        "date": "April 23"
+      },
+      {
+        "placing": "1",
+        "race": "Berkeley Hills Road Race",
+        "category": "Collegiate Men A",
+        "date": "April 30"
+      },
+      {
+        "placing": "1",
+        "race": "Grinduro California",
+        "category": "Pro Men",
+        "date": "May 20"
+      },
+      {
+        "placing": "1",
+        "race": "NorCal Dirt Camp XC",
+        "category": "Pro/Open Men",
+        "date": "May 27"
+      },
+      {
+        "placing": "1",
+        "race": "NorCal Dirt Camp STXC",
+        "category": "Pro/Open Men",
+        "date": "May 28"
+      },
+      {
+        "placing": "21",
+        "race": "Lost & Found Gravel 100",
+        "category": "Pro Men",
+        "date": "June 3"
+      },
+      {
+        "placing": "6",
+        "race": "Missoula XCO C2",
+        "category": "UCI Elite Men",
+        "date": "June 9"
+      },
+      {
+        "placing": "10",
+        "race": "Missoula XCO C1",
+        "category": "UCI Elite Men",
+        "date": "June 10"
+      },
+      {
+        "placing": "1",
+        "race": "Motherlode Epic",
+        "category": "Pro/Open Men",
+        "date": "June 17"
+      },
+      {
+        "placing": "12",
+        "race": "Soldier Hollow STXC",
+        "category": "UCI Elite Men",
+        "date": "June 23"
+      },
+      {
+        "placing": "7",
+        "race": "Soldier Hollow XCO",
+        "category": "UCI Elite Men",
+        "date": "June 25"
+      },
+      {
+        "placing": "22",
+        "race": "US MTB Nationals XCO",
+        "category": "UCI U23 Men",
+        "date": "July 8"
+      },
+      {
+        "placing": "12",
+        "race": "US MTB Nationals STXC",
+        "category": "UCI U23 Men",
+        "date": "July 9"
+      },
+      {
+        "placing": "36",
+        "race": "Downieville XC",
+        "category": "Pro Men",
+        "date": "July 15"
+      },
+      {
+        "placing": "21",
+        "race": "Downieville Downhill",
+        "category": "Pro Men",
+        "date": "July 16"
+      },
+      {
+        "placing": "9",
+        "race": "Breck Epic Stage Race",
+        "category": "Pro Men",
+        "date": "August 13-18"
+      },
+      {
+        "placing": "1",
+        "race": "Cal Poly Humboldt Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "September 16"
+      },
+      {
+        "placing": "1",
+        "race": "Bay Area Super Prestige VSRT Cyclocross",
+        "category": "Pro Men",
+        "date": "September 23"
+      },
+      {
+        "placing": "1",
+        "race": "Bay Area Super Prestige Mare Island Cyclocross",
+        "category": "Pro Men",
+        "date": "September 24"
+      },
+      {
+        "placing": "60",
+        "race": "UCI MTB World Cup Snowshoe XCO",
+        "category": "UCI U23 Men",
+        "date": "October 1"
+      },
+      {
+        "placing": "46",
+        "race": "UCI MTB World Cup Mont Saint Anne XCO",
+        "category": "UCI U23 Men",
+        "date": "October 8"
+      },
+      {
+        "placing": "2",
+        "race": "Collegiate MTB Nationals XC",
+        "category": "Collegiate Men Club",
+        "date": "October 13"
+      },
+      {
+        "placing": "3",
+        "race": "Collegiate MTB Nationals STXC",
+        "category": "Collegiate Men Club",
+        "date": "October 14"
+      },
+      {
+        "placing": "1",
+        "race": "UC Berkeley/Davis Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "October 28"
+      },
+      {
+        "placing": "2",
+        "race": "Surf City Cyclocross",
+        "category": "Pro Men",
+        "date": "October 29"
+      },
+      {
+        "placing": "1",
+        "race": "Cal Poly SLO Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "November 5"
+      },
+      {
+        "placing": "1",
+        "race": "Stafford Lake Rattler XC",
+        "category": "Pro Men",
+        "date": "November 11"
+      },
+      {
+        "placing": "1",
+        "race": "UCSC Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "November 18"
+      },
+      {
+        "placing": "1",
+        "race": "West Coast Cyclocross Points Prestige",
+        "category": "Pro Men",
+        "date": "November 19"
+      },
+      {
+        "placing": "2",
+        "race": "Cyclocross Infestation",
+        "category": "Pro Men",
+        "date": "December 3"
+      },
+      {
+        "placing": "4",
+        "race": "Collegiate Cyclocross Nationals",
+        "category": "Collegiate Men Club",
+        "date": "December 7"
+      },
+      {
+        "placing": "16",
+        "race": "US Cyclocross Nationals",
+        "category": "UCI U23 Men",
+        "date": "December 10"
+      }
+    ],
+    "2022": [
+      {
+        "placing": "5",
+        "race": "CCCX MTB-XC Race #1",
+        "category": "Pro Men",
+        "date": "Feb 6"
+      },
+      {
+        "placing": "3",
+        "race": "CCCX MTB-XC Race #2",
+        "category": "Pro Men",
+        "date": "Feb 20"
+      },
+      {
+        "placing": "12",
+        "race": "Sea Otter MTB 40k XC",
+        "category": "Pro Men",
+        "date": "April 10"
+      },
+      {
+        "placing": "3",
+        "race": "Grasshopper Lake Sonoma MTB",
+        "category": "Pro Men",
+        "date": "April 16"
+      },
+      {
+        "placing": "46",
+        "race": "Pro XCT #1 Fayetteville Arkansas XCO",
+        "category": "UCI Elite Men",
+        "date": "April 21"
+      },
+      {
+        "placing": "46",
+        "race": "Pro XCT #1 Fayetteville Arkansas STXC",
+        "category": "UCI Elite Men",
+        "date": "April 22"
+      },
+      {
+        "placing": "58",
+        "race": "Pro XCT #2 Fayetteville Arkansas XCO",
+        "category": "UCI Elite Men",
+        "date": "April 23"
+      },
+      {
+        "placing": "31",
+        "race": "Pro XCT#3 Soldier Hollow Utah STXC",
+        "category": "Pro Men",
+        "date": "May 7"
+      },
+      {
+        "placing": "27",
+        "race": "Pro XCT#3 Soldier Hollow Utah XCO",
+        "category": "Pro Men",
+        "date": "May 8"
+      },
+      {
+        "placing": "1",
+        "race": "Grasshopper Sherwood Gravel",
+        "category": "Pro Men",
+        "date": "May 15"
+      },
+      {
+        "placing": "4",
+        "race": "Grinduro Gravel Shasta",
+        "category": "Pro Men",
+        "date": "May 21"
+      },
+      {
+        "placing": "1",
+        "race": "NorCal Dirt Camp Short Track",
+        "category": "Men Pro/Open",
+        "date": "May 28"
+      },
+      {
+        "placing": "1",
+        "race": "NorCal Dirt Camp XC",
+        "category": "Men Pro/Open",
+        "date": "May 29"
+      },
+      {
+        "placing": "23",
+        "race": "Lost & Found Gravel 100",
+        "category": "Pro Men",
+        "date": "June 4"
+      },
+      {
+        "placing": "17",
+        "race": "Pro XCT #5 Missoula Montana STXC",
+        "category": "UCI Elite Men",
+        "date": "June 10"
+      },
+      {
+        "placing": "13",
+        "race": "Pro XCT #5 Missoula Montana XCO",
+        "category": "UCI Elite Men",
+        "date": "June 11"
+      },
+      {
+        "placing": "28",
+        "race": "Canada Cup Canmore STXC",
+        "category": "UCI Elite Men",
+        "date": "June 17"
+      },
+      {
+        "placing": "33",
+        "race": "Canada Cup Canmore XCO",
+        "category": "UCI Elite Men",
+        "date": "June 18"
+      },
+      {
+        "placing": "15",
+        "race": "Canada Cup Whistler XCO",
+        "category": "UCI Elite Men",
+        "date": "June 25"
+      },
+      {
+        "placing": "8",
+        "race": "Pro XCT #6 Banner Elk North Carolina XCO",
+        "category": "UCI Elite Men",
+        "date": "July 9"
+      },
+      {
+        "placing": "2",
+        "race": "Tahoe Trail 50k",
+        "category": "Pro Men",
+        "date": "July 16"
+      },
+      {
+        "placing": "32",
+        "race": "US MTB National Championships XCO",
+        "category": "U23 Men",
+        "date": "July 23"
+      },
+      {
+        "placing": "22",
+        "race": "US MTB National Championships STXC",
+        "category": "U23 Men",
+        "date": "July 24"
+      },
+      {
+        "placing": "1",
+        "race": "Cal Poly Humboldt Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "September 24"
+      },
+      {
+        "placing": "2",
+        "race": "Cal Poly Humboldt Collegiate Short Track",
+        "category": "Collegiate Men A",
+        "date": "September 25"
+      },
+      {
+        "placing": "5",
+        "race": "Mount Diablo Hillclimb",
+        "category": "Open Men",
+        "date": "October 2"
+      },
+      {
+        "placing": "4",
+        "race": "West Sacramento Cyclocross Grand Prix",
+        "category": "Men A",
+        "date": "October 8"
+      },
+      {
+        "placing": "11",
+        "race": "Collegiate MTB National Championships XC",
+        "category": "Collegiate Men Club",
+        "date": "October 14"
+      },
+      {
+        "placing": "10",
+        "race": "Collegiate MTB National Championships STXC",
+        "category": "Collegiate Men Club",
+        "date": "October 15"
+      },
+      {
+        "placing": "1",
+        "race": "Chico State Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "October 22"
+      },
+      {
+        "placing": "1",
+        "race": "Chico State Collegiate Short Track",
+        "category": "Collegiate Men A",
+        "date": "October 23"
+      },
+      {
+        "placing": "1",
+        "race": "UC Berkeley/Davis Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "October 29"
+      },
+      {
+        "placing": "1",
+        "race": "UC Berkeley/Davis Collegiate Short Track",
+        "category": "Collegiate Men A",
+        "date": "October 30"
+      },
+      {
+        "placing": "1",
+        "race": "Cal Poly SLO Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "November 5"
+      },
+      {
+        "placing": "2",
+        "race": "UC Santa Cruz Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "November 12"
+      },
+      {
+        "placing": "1",
+        "race": "Sacramento Cyclocross at Lembi Park",
+        "category": "Men A",
+        "date": "November 13"
+      },
+      {
+        "placing": "1",
+        "race": "Sacramento Cyclocross at Rausch Park",
+        "category": "Men A",
+        "date": "November 19"
+      },
+      {
+        "placing": "1",
+        "race": "Bay Area Super Prestige at Manzanita Park",
+        "category": "Men A",
+        "date": "November 27"
+      },
+      {
+        "placing": "7",
+        "race": "Bay Area Super Prestige at Coyote Point",
+        "category": "Men A",
+        "date": "December 4"
+      },
+      {
+        "placing": "4",
+        "race": "Collegiate Cyclocross National Championships",
+        "category": "Collegiate Men Club",
+        "date": "December 8"
+      },
+      {
+        "placing": "28",
+        "race": "US Cyclocross National Championships",
+        "category": "U23 Men",
+        "date": "December 11"
+      }
+    ],
+    "2021": [
+      {
+        "placing": "10",
+        "race": "MTB Showdown Granite Bay",
+        "category": "Pro/expert open",
+        "date": "March 28"
+      },
+      {
+        "placing": "4",
+        "race": "Six Sigma Short Track",
+        "category": "17/18 Men",
+        "date": "April 10"
+      },
+      {
+        "placing": "5",
+        "race": "Six Sigma XC",
+        "category": "17/18 Men",
+        "date": "April 11"
+      },
+      {
+        "placing": "3",
+        "race": "NICA NorCal Race #1",
+        "category": "Varsity",
+        "date": "April 25"
+      },
+      {
+        "placing": "20",
+        "race": "UCI Soldier Hollow TT, Midway UT",
+        "category": "17/18 UCI",
+        "date": "April 30"
+      },
+      {
+        "placing": "22",
+        "race": "UCI Soldier Hollow XC, Midway UT",
+        "category": "17/18 UCI",
+        "date": "May 1"
+      },
+      {
+        "placing": "4",
+        "race": "NICA NorCal Race #3",
+        "category": "Varsity",
+        "date": "May 16"
+      },
+      {
+        "placing": "1",
+        "race": "Mother Lode Epic",
+        "category": "17/18 Men",
+        "date": "June 19"
+      },
+      {
+        "placing": "57",
+        "race": "XC Mountain Bike Nationals",
+        "category": "17/18 UCI",
+        "date": "July 9"
+      },
+      {
+        "placing": "4",
+        "race": "Tahoe Trail 100",
+        "category": "U19 Men",
+        "date": "July 17"
+      },
+      {
+        "placing": "1",
+        "race": "Breck Epic Stage Race",
+        "category": "Duo Open Men",
+        "date": "August 15-20"
+      },
+      {
+        "placing": "3",
+        "race": "VSRT Rowell Ranch Cyclocross",
+        "category": "Men A",
+        "date": "Sept 25"
+      },
+      {
+        "placing": "4",
+        "race": "Sacramento Cyclocross - Lakeside",
+        "category": "Men A",
+        "date": "Oct 2"
+      },
+      {
+        "placing": "4",
+        "race": "Mt Diablo Challenge Hillclimb",
+        "category": "Men 18-24",
+        "date": "Oct 3"
+      },
+      {
+        "placing": "5",
+        "race": "Sea Otter MTB XC",
+        "category": "Men 17-18, Cat 1",
+        "date": "Oct 10"
+      },
+      {
+        "placing": "4",
+        "race": "Collegiate National Champs, MTB XC",
+        "category": "Men Club",
+        "date": "Oct 15"
+      },
+      {
+        "placing": "5",
+        "race": "Collegiate National Champs, MTB Short Track",
+        "category": "Men Club",
+        "date": "Oct 16"
+      },
+      {
+        "placing": "2",
+        "race": "Cal Poly Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "October 23"
+      },
+      {
+        "placing": "1",
+        "race": "UC Berkeley Collegiate XC",
+        "category": "Collegiate Men A",
+        "date": "October 30"
+      },
+      {
+        "placing": "5",
+        "race": "Surf City Cyclocross Day 2",
+        "category": "Men A",
+        "date": "Oct 31"
+      },
+      {
+        "placing": "1",
+        "race": "Western Collegiate Champs, MTB XC",
+        "category": "Collegiate Men A",
+        "date": "Nov 6"
+      },
+      {
+        "placing": "5",
+        "race": "Sacramento Cyclocross - Lembi Park",
+        "category": "Men A",
+        "date": "Nov 7"
+      }
     ]
-  }
+  },
+  "bio_details": [
+    "DOB: February 2003 (UCI Elite)",
+    "Hometown: Los Gatos, California",
+    "Based in: Boulder, Colorado"
+  ],
+  "instagram_grid": [
+    {
+      "img": "assets/images/cycling/instagram/ig-01.jpg",
+      "link": "https://www.instagram.com/p/DbDwINeEdEU/"
+    },
+    {
+      "img": "assets/images/cycling/instagram/ig-02.jpg",
+      "link": "https://www.instagram.com/p/Da1HVB0ildd/"
+    },
+    {
+      "img": "assets/images/cycling/instagram/ig-03.jpg",
+      "link": "https://www.instagram.com/p/DaivgvZlBnP/"
+    },
+    {
+      "img": "assets/images/cycling/instagram/ig-04.jpg",
+      "link": "https://www.instagram.com/p/DaLmXA9lONh/"
+    },
+    {
+      "img": "assets/images/cycling/instagram/ig-05.jpg",
+      "link": "https://www.instagram.com/p/DZqLw8elKVW/"
+    },
+    {
+      "img": "assets/images/cycling/instagram/ig-06.jpg",
+      "link": "https://www.instagram.com/p/DZfDzNYCvRJ/"
+    },
+    {
+      "img": "assets/images/cycling/instagram/ig-07.jpg",
+      "link": "https://www.instagram.com/p/DZD-vdIGerW/"
+    },
+    {
+      "img": "assets/images/cycling/instagram/ig-08.jpg",
+      "link": "https://www.instagram.com/p/DYlkWA0lJao/"
+    },
+    {
+      "img": "assets/images/cycling/instagram/ig-09.jpg",
+      "link": "https://www.instagram.com/p/DYLweZwDZod/"
+    },
+    {
+      "img": "assets/images/cycling/instagram/ig-10.jpg",
+      "link": "https://www.instagram.com/p/DYDMnUvku5W/"
+    },
+    {
+      "img": "assets/images/cycling/instagram/ig-11.jpg",
+      "link": "https://www.instagram.com/p/DXLNyfblO2c/"
+    }
+  ],
+  "external_links": [
+    {
+      "label": "MTB Data",
+      "url": "https://mtbdata.com/riders/justin-peck"
+    },
+    {
+      "label": "UCI Individual Ranking",
+      "url": "https://www.uci.org/discipline/mountain-bike/4LArSj7CKcytMrGEDtKwkb?tab=rankings"
+    }
+  ]
 }

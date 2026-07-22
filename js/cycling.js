@@ -1,6 +1,6 @@
 // Builds the single-page Cycling page from content/cycling-resume.json:
-// bio + photos, highlight results, "follow along" Instagram grid, 2026
-// schedule, results by season (collapsible), team, sponsors, and connect.
+// bio + photos, career highlights next to an Instagram grid, 2026 schedule,
+// results by season (collapsible) with result links, team, sponsors, connect.
 (function () {
   const root = document.getElementById("cycling-root");
   if (!root) return;
@@ -11,6 +11,26 @@
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
+  }
+
+  // 1 -> 1st, 2 -> 2nd, 3 -> 3rd, 11 -> 11th, 22 -> 22nd ...
+  function ordinal(n) {
+    const num = parseInt(n, 10);
+    if (isNaN(num)) return String(n);
+    const tens = num % 100;
+    if (tens >= 11 && tens <= 13) return num + "th";
+    switch (num % 10) {
+      case 1: return num + "st";
+      case 2: return num + "nd";
+      case 3: return num + "rd";
+      default: return num + "th";
+    }
+  }
+
+  // Add ordinal suffixes to each day number in a date string, e.g.
+  // "May 2-4" -> "May 2nd-4th", "February 1" -> "February 1st".
+  function ordinalizeDate(date) {
+    return String(date).replace(/\d+/g, (m) => ordinal(m));
   }
 
   fetch("content/cycling-resume.json", { cache: "no-cache" })
@@ -27,30 +47,35 @@
     });
 
   function render(d) {
-    const html = [
+    root.innerHTML = [
       bio(d),
-      highlights(d.top_results, d.follow_grid, d.instagram),
+      highlights(d.top_results, d.instagram_grid, d.instagram),
       schedule(d.schedule),
       seasons(d.results_by_season),
+      externalLinks(d.external_links),
       team(d.team),
       sponsors(d.sponsors),
       connect(d.connect),
     ].join("\n");
-    root.innerHTML = html;
   }
 
-  // 1. Bio with two photos on the side
+  // 1. Bio with two photos on the side; DOB / hometown / based-in at the bottom
   function bio(d) {
     const paras = (d.background || []).map((p) => "<p>" + esc(p) + "</p>").join("");
+    const details = (d.bio_details || []).length
+      ? '<ul class="cy-bio__details">' +
+        d.bio_details.map((x) => "<li>" + esc(x) + "</li>").join("") +
+        "</ul>"
+      : "";
     const photos = (d.bio_photos || [])
       .map((src) => '<img src="' + esc(src) + '" alt="Justin Peck racing" loading="lazy" />')
       .join("");
     return (
       '<section class="cy-bio">' +
       '<div class="cy-bio__text">' +
-      '<h1 class="cy-bio__headline">Racing</h1>' +
-      (d.license ? '<p class="cy-bio__license">' + esc(d.license) + "</p>" : "") +
+      '<h1 class="cy-bio__headline">About Justin Peck</h1>' +
       paras +
+      details +
       "</div>" +
       '<div class="cy-bio__photos">' +
       photos +
@@ -59,7 +84,7 @@
     );
   }
 
-  // 2. Highlight results + "Follow along!" Instagram grid
+  // 2. Career highlights next to the Instagram grid
   function highlights(top, grid, ig) {
     const rows = (top || [])
       .map(
@@ -74,35 +99,33 @@
 
     const tiles = (grid || [])
       .map(
-        (src) =>
+        (item) =>
           '<a class="ig-grid__item" href="' +
-          esc(ig) +
+          esc(item.link) +
           '" target="_blank" rel="noopener">' +
           '<img src="' +
-          esc(src) +
-          '" alt="Justin Peck on Instagram" loading="lazy" />' +
+          esc(item.img) +
+          '" alt="Instagram post" loading="lazy" />' +
           "</a>"
       )
       .join("");
 
-    const handle = "@justin__peck";
     return (
       '<section class="cy-section">' +
-      '<h2 class="cy-section__label">Highlight results</h2>' +
+      '<h2 class="cy-section__label">Career highlights</h2>' +
+      '<div class="cy-highlights">' +
       '<ul class="hl-list">' +
       rows +
       "</ul>" +
-      "</section>" +
-      '<section class="cy-follow">' +
-      '<h2 class="cy-follow__title">Follow along!</h2>' +
+      '<div class="ig-block">' +
       '<div class="ig-grid">' +
       tiles +
       "</div>" +
-      '<a class="cy-follow__cta" href="' +
+      '<a class="ig-follow" href="' +
       esc(ig) +
-      '" target="_blank" rel="noopener">' +
-      esc(handle) +
-      " on Instagram &rarr;</a>" +
+      '" target="_blank" rel="noopener">@justin__peck on Instagram &rarr;</a>' +
+      "</div>" +
+      "</div>" +
       "</section>"
     );
   }
@@ -118,7 +141,7 @@
             esc(e.month || "") +
             '</span><span class="sch__event">' +
             esc(e.note) +
-            "</span><span class=\"sch__loc\"></span></li>"
+            '</span><span class="sch__loc"></span></li>'
           );
         }
         const date = [e.month, e.dates].filter(Boolean).join(" ");
@@ -145,28 +168,23 @@
     );
   }
 
-  // 4. Results by season (collapsible), date / race / placing — no category
+  // 4. Results by season (collapsible): placing / race / date, with ordinals
   function seasons(bySeason) {
     if (!bySeason) return "";
-    // newest season first, open the first one by default
     const years = Object.keys(bySeason).sort((a, b) => b.localeCompare(a));
     const blocks = years
       .map(function (year, i) {
         const rows = (bySeason[year] || [])
-          .map(function (r) {
-            const podium = ["1", "2", "3"].indexOf(String(r.placing).trim()) !== -1;
-            return (
-              '<li class="res' +
-              (podium ? " res--podium" : "") +
-              '"><span class="res__place">' +
-              esc(r.placing) +
+          .map(
+            (r) =>
+              '<li class="res"><span class="res__place">' +
+              esc(ordinal(r.placing)) +
               '</span><span class="res__race">' +
               esc(r.race) +
               '</span><span class="res__date">' +
-              esc(r.date || "") +
+              esc(ordinalizeDate(r.date || "")) +
               "</span></li>"
-            );
-          })
+          )
           .join("");
         return (
           '<details class="season"' +
@@ -174,7 +192,7 @@
           ">" +
           '<summary class="season__summary"><span>' +
           esc(year) +
-          " Season</span><span class=\"season__count\">" +
+          ' Season</span><span class="season__count">' +
           (bySeason[year] || []).length +
           " races</span></summary>" +
           '<ul class="res-list">' +
@@ -192,6 +210,22 @@
       "</div>" +
       "</section>"
     );
+  }
+
+  // External ranking / results links
+  function externalLinks(links) {
+    if (!links || !links.length) return "";
+    const buttons = links
+      .map(
+        (l) =>
+          '<a class="pill-link" href="' +
+          esc(l.url) +
+          '" target="_blank" rel="noopener">' +
+          esc(l.label) +
+          " &rarr;</a>"
+      )
+      .join("");
+    return '<div class="cy-links">' + buttons + "</div>";
   }
 
   // 5. Team
@@ -218,7 +252,7 @@
     );
   }
 
-  // 6. Sponsors — logos linked out
+  // 6. Sponsors
   function sponsors(list) {
     if (!list || !list.length) return "";
     const items = list
