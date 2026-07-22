@@ -2,6 +2,30 @@
   "name": "Justin Peck",
   "contact": "justinpeck03@gmail.com | (203) 448-8268",
   "license": "UCI Elite (02/15/2003)",
+  "instagram": "https://www.instagram.com/justin__peck/",
+  "bio_photos": [
+    "assets/images/cycling/photo-1.png",
+    "assets/images/cycling/photo-3.jpeg"
+  ],
+  "follow_grid": [
+    "assets/images/cycling/photo-2.png",
+    "assets/images/cycling/photo-3.jpeg",
+    "assets/images/cycling/photo-1.png"
+  ],
+  "team": {
+    "name": "Everyday Heros Real Estate Racing",
+    "url": "https://www.losgatosbicycleracing.org",
+    "logo": "assets/images/cycling/team/losgatos.jpg"
+  },
+  "sponsors": [
+    { "name": "BMC", "url": "https://www.bmc-switzerland.com", "logo": "assets/images/cycling/sponsors/bmc.png" },
+    { "name": "Wilderness Trail Bikes", "url": "https://www.wtb.com", "logo": "assets/images/cycling/sponsors/wtb.png" },
+    { "name": "Rudy Project", "url": "https://www.rudyproject.com", "logo": "assets/images/cycling/sponsors/rudy.png" }
+  ],
+  "connect": {
+    "email": "justinpeck03@gmail.com",
+    "instagram": "https://www.instagram.com/justin__peck/"
+  },
   "background": [
     "I was introduced to cycling at a young age, and grew up racing BMX and Cyclocross. In high school I joined my local NICA team, Santa Cruz Mountains Cycling, and found my passion in cross country mountain bike racing. I was selected as one of four seniors across the nation to receive the 2021 Sparkle On Scholarship from Kate Courtney, inspiring me to take my racing to the next level in college.",
     "Throughout my 4 years at UC Berkeley, I continued to train and travel to UCI races across North America. I chased improvements in my results, and became a Collegiate Mountain Bike and Cyclocross National Champion in 2024 & 2025. I competed in the U23 Lifetime Grand Prix in 2025, and will be racing XCO with a focus on the UCI MTB World Cups in 2026. Outside of racing, I have interned as a design engineer at SRAM and Rockshox, and will be attending CU Boulder for my MS in Mechanical Engineering through 2028."

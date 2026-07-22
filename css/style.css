@@ -497,6 +497,286 @@ a {
   border-color: var(--text-muted);
 }
 
+/* ---------- Cycling ---------- */
+.cycling {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+/* 1. Bio + two photos */
+.cy-bio {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 56px;
+  align-items: center;
+  padding: 72px 0 84px;
+}
+.cy-bio__headline {
+  margin: 0 0 8px;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.cy-bio__license {
+  margin: 0 0 24px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+.cy-bio__text p {
+  margin: 0 0 20px;
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: #33333a;
+}
+.cy-bio__text p:last-child {
+  margin-bottom: 0;
+}
+.cy-bio__photos {
+  display: grid;
+  gap: 18px;
+}
+.cy-bio__photos img {
+  width: 100%;
+  border-radius: 18px;
+  background: var(--card-bg);
+  display: block;
+}
+
+/* Shared labeled section (matches About) */
+.cy-section {
+  padding: 60px 0;
+  border-top: 0.5px solid var(--hairline);
+}
+.cy-section__label {
+  margin: 0 0 32px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+/* 2a. Highlight results */
+.hl-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 760px;
+}
+.hl {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 0.5px solid var(--hairline);
+}
+.hl:first-child {
+  border-top: 0.5px solid var(--hairline);
+}
+.hl__place {
+  flex: 0 0 44px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.hl__race {
+  color: #33333a;
+  font-size: 1.05rem;
+}
+
+/* 2b. Follow along Instagram grid */
+.cy-follow {
+  padding: 20px 0 60px;
+  text-align: center;
+}
+.cy-follow__title {
+  margin: 0 0 28px;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.ig-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.ig-grid__item {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--card-bg);
+}
+.ig-grid__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s var(--ease);
+}
+.ig-grid__item:hover img {
+  transform: scale(1.05);
+}
+.cy-follow__cta {
+  display: inline-block;
+  margin-top: 28px;
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.cy-follow__cta:hover {
+  color: var(--text-secondary);
+}
+
+/* 3. Schedule */
+.sch-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sch {
+  display: grid;
+  grid-template-columns: 130px 1fr 1fr;
+  gap: 24px;
+  padding: 14px 0;
+  border-bottom: 0.5px solid var(--hairline);
+}
+.sch:first-child {
+  border-top: 0.5px solid var(--hairline);
+}
+.sch__date {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+.sch__event {
+  font-weight: 500;
+}
+.sch__loc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* 4. Results by season (collapsible) */
+.seasons {
+  border-top: 0.5px solid var(--hairline);
+}
+.season {
+  border-bottom: 0.5px solid var(--hairline);
+}
+.season__summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.season__summary::-webkit-details-marker {
+  display: none;
+}
+.season__summary::after {
+  content: "+";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+}
+.season[open] .season__summary::after {
+  content: "–";
+}
+.season__count {
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+.res-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 20px;
+}
+.res {
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  gap: 20px;
+  align-items: baseline;
+  padding: 11px 0;
+  border-top: 0.5px solid var(--hairline);
+}
+.res__place {
+  font-variant-numeric: tabular-nums;
+  color: var(--text-secondary);
+}
+.res--podium .res__place {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.res__race {
+  color: #33333a;
+}
+.res__date {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* 5. Team */
+.team-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 28px;
+  border: 0.5px solid var(--border);
+  border-radius: 16px;
+  transition: border-color 0.2s var(--ease), background 0.2s var(--ease);
+}
+.team-card:hover {
+  border-color: var(--text-muted);
+  background: var(--card-bg);
+}
+.team-card__logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+.team-card__name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+/* 6. Sponsors */
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+}
+.sponsor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88px;
+  min-width: 140px;
+  padding: 18px 28px;
+  border: 0.5px solid var(--border);
+  border-radius: 16px;
+  transition: border-color 0.2s var(--ease), background 0.2s var(--ease);
+}
+.sponsor:hover {
+  border-color: var(--text-muted);
+  background: var(--card-bg);
+}
+.sponsor img {
+  max-height: 100%;
+  max-width: 180px;
+  object-fit: contain;
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .work__grid {
@@ -556,6 +836,44 @@ a {
   }
   .connect {
     padding: 56px 0 72px;
+  }
+  .cycling {
+    padding: 0 18px;
+  }
+  .cy-bio {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 44px 0 56px;
+  }
+  .cy-bio__photos {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cy-section {
+    padding: 44px 0;
+  }
+  /* Stack schedule rows; hide the separate location column (kept in event) */
+  .sch {
+    grid-template-columns: 96px 1fr;
+    gap: 6px 16px;
+  }
+  .sch__loc {
+    grid-column: 2;
+    font-size: 0.85rem;
+  }
+  .res {
+    grid-template-columns: 34px 1fr;
+    gap: 4px 14px;
+  }
+  .res__date {
+    grid-column: 2;
+  }
+  .season__count {
+    margin-right: 12px;
+  }
+  .sponsor {
+    height: 72px;
+    min-width: 110px;
+    padding: 14px 20px;
   }
   /* On touch screens there is no hover, so keep captions visible. */
   .card__caption {
