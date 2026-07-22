@@ -1,12 +1,25 @@
+/* Self-hosted Montserrat (variable, weights 100–900), no external request */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/montserrat-latin.woff2") format("woff2");
+}
+
 :root {
   --bg: #ffffff;
   --text-primary: #1d1d1f;
   --text-secondary: #6e6e73;
+  --text-muted: #86868b;
   --hairline: rgba(0, 0, 0, 0.1);
+  --border: #d6d6db;
   --card-bg: #f5f5f7;
   --radius: 20px;
   --maxw: 1120px;
   --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --font: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -21,8 +34,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text-primary);
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -456,45 +468,56 @@ a {
   font-size: 0.9rem;
 }
 
-/* Connect */
-.connect {
+/* Standard contact section (bottom of every page, injected by footer.js) */
+.contact {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 88px 0 104px;
+  padding: 96px 22px 44px;
   border-top: 0.5px solid var(--hairline);
-  text-align: center;
 }
-.connect__title {
-  margin: 0 0 12px;
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  font-weight: 600;
+.contact__title {
+  margin: 0 0 22px;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 700;
   letter-spacing: -0.02em;
+  line-height: 1;
 }
-.connect__lead {
-  margin: 0 auto 32px;
-  max-width: 32rem;
+.contact__email {
+  display: inline-block;
   color: var(--text-secondary);
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 1.3rem;
+  transition: color 0.2s var(--ease);
 }
-.connect__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-}
-.connect__link {
-  padding: 13px 26px;
-  border: 0.5px solid var(--border);
-  border-radius: 999px;
+.contact__email:hover {
   color: var(--text-primary);
-  font-size: 1rem;
-  font-weight: 500;
-  transition: background 0.2s var(--ease), border-color 0.2s var(--ease);
 }
-.connect__link:hover {
-  background: var(--card-bg);
-  border-color: var(--text-muted);
+.contact__socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 34px;
+}
+.contact__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  color: var(--text-primary);
+  transition: opacity 0.2s var(--ease), transform 0.2s var(--ease);
+}
+.contact__icon:hover {
+  opacity: 0.6;
+  transform: translateY(-2px);
+}
+.contact__icon svg {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+.contact__copyright {
+  margin: 60px 0 0;
+  color: var(--text-muted);
+  font-size: 0.8rem;
 }
 
 /* ---------- Cycling ---------- */
@@ -862,8 +885,11 @@ a {
     gap: 20px;
     padding: 44px 0;
   }
-  .connect {
-    padding: 56px 0 72px;
+  .contact {
+    padding: 64px 18px 32px;
+  }
+  .contact__copyright {
+    margin-top: 44px;
   }
   .cycling {
     padding: 0 18px;

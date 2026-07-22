@@ -32,7 +32,6 @@
     parts.push(section("Experience", experience(data.experience)));
     parts.push(section("Skills", skills(data.skills)));
     parts.push(section("Interests", interests(data.background_and_interests)));
-    parts.push(connect(data.connect));
     root.innerHTML = parts.join("\n");
   }
 
@@ -160,34 +159,5 @@
           "</div>"
       )
       .join("");
-  }
-
-  function connect(c) {
-    if (!c) return "";
-    const links = [];
-    if (c.email) {
-      links.push(
-        '<a class="connect__link" href="mailto:' +
-          esc(c.email) +
-          '">' +
-          esc(c.email) +
-          "</a>"
-      );
-    }
-    if (c.linkedin) {
-      links.push(
-        '<a class="connect__link" href="' +
-          esc(c.linkedin) +
-          '" target="_blank" rel="noopener">LinkedIn</a>'
-      );
-    }
-    return (
-      '<section class="connect">' +
-      '<h2 class="connect__title">Let’s connect</h2>' +
-      '<p class="connect__lead">Reach out about product design work, collaboration, or racing.</p>' +
-      '<div class="connect__links">' +
-      links.join("") +
-      "</div></section>"
-    );
   }
 })();

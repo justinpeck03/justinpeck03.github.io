@@ -55,7 +55,6 @@
       externalLinks(d.external_links),
       team(d.team),
       sponsors(d.sponsors),
-      connect(d.connect),
     ].join("\n");
   }
 
@@ -278,36 +277,6 @@
       items +
       "</div>" +
       "</section>"
-    );
-  }
-
-  // 7. Connect
-  function connect(c) {
-    if (!c) return "";
-    const links = [];
-    if (c.email) {
-      links.push(
-        '<a class="connect__link" href="mailto:' +
-          esc(c.email) +
-          '">' +
-          esc(c.email) +
-          "</a>"
-      );
-    }
-    if (c.instagram) {
-      links.push(
-        '<a class="connect__link" href="' +
-          esc(c.instagram) +
-          '" target="_blank" rel="noopener">Instagram</a>'
-      );
-    }
-    return (
-      '<section class="connect">' +
-      '<h2 class="connect__title">Let’s connect</h2>' +
-      '<p class="connect__lead">Reach out about racing, results, or sponsorship.</p>' +
-      '<div class="connect__links">' +
-      links.join("") +
-      "</div></section>"
     );
   }
 })();
