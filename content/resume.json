@@ -15,6 +15,10 @@
     "email": "justinpeck03@gmail.com",
     "linkedin": "https://www.linkedin.com/in/peck-justin/"
   },
+  "resume": {
+    "pdf": "assets/resume/Justin-Peck-Resume.pdf",
+    "preview": "assets/resume/resume-preview.png"
+  },
   "education": [
     {
       "school": "University of Colorado Boulder",

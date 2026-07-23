@@ -32,6 +32,7 @@
     parts.push(section("Experience", experience(data.experience)));
     parts.push(section("Skills", skills(data.skills)));
     parts.push(section("Interests", interests(data.background_and_interests)));
+    parts.push(section("Resume", resume(data.resume)));
     root.innerHTML = parts.join("\n");
   }
 
@@ -159,5 +160,19 @@
           "</div>"
       )
       .join("");
+  }
+
+  function resume(r) {
+    if (!r || !r.pdf) return "";
+    const button =
+      '<a class="resume-download" href="' +
+      esc(r.pdf) +
+      '" download>Download PDF</a>';
+    const preview = r.preview
+      ? '<img class="resume-preview" src="' +
+        esc(r.preview) +
+        '" alt="Preview of Justin Peck’s resume" loading="lazy" />'
+      : "";
+    return button + preview;
   }
 })();

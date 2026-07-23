@@ -21,7 +21,6 @@
 
   mount.className = "contact";
   mount.innerHTML =
-    '<h2 class="contact__title">Contact</h2>' +
     '<a class="contact__email" href="mailto:' + email + '">' + email + "</a>" +
     '<div class="contact__socials">' +
     '<a class="contact__icon" href="' + linkedin + '" target="_blank" rel="noopener" aria-label="LinkedIn">' +
