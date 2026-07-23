@@ -76,5 +76,40 @@ window.Portfolio = (function () {
     return a;
   }
 
-  return { PROJECTS_URL, escapeHtml, loadProjects, buildCard, buildRailCard };
+  // Wire prev/next buttons to page a horizontal rail, disabling them at the
+  // ends. Instant scroll (behavior "auto") for reliable, jump-free paging.
+  function wireRailArrows(rail, prev, next) {
+    if (!rail || !prev || !next) return;
+    const nav = prev.parentElement;
+    function update() {
+      const max = rail.scrollWidth - rail.clientWidth;
+      const scrollable = max > 4;
+      if (nav) nav.style.display = scrollable ? "" : "none";
+      prev.disabled = rail.scrollLeft <= 4;
+      next.disabled = rail.scrollLeft >= max - 4;
+    }
+    prev.addEventListener("click", function () {
+      rail.scrollBy({ left: -rail.clientWidth * 0.85, behavior: "auto" });
+      update();
+    });
+    next.addEventListener("click", function () {
+      rail.scrollBy({ left: rail.clientWidth * 0.85, behavior: "auto" });
+      update();
+    });
+    rail.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+    // Re-check once layout/fonts have settled (widths can shift after first paint)
+    requestAnimationFrame(update);
+    window.addEventListener("load", update);
+  }
+
+  return {
+    PROJECTS_URL,
+    escapeHtml,
+    loadProjects,
+    buildCard,
+    buildRailCard,
+    wireRailArrows,
+  };
 })();

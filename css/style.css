@@ -123,10 +123,45 @@ a {
   padding-top: 0;
 }
 
-.work__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+/* Grouped project categories, each a horizontal-scroll rail of cards */
+.cat {
+  margin-top: 60px;
+}
+.cat:first-child {
+  margin-top: 0;
+}
+.cat__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.cat__title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.cat__nav {
+  display: flex;
+  gap: 10px;
+  flex: none;
+}
+.cat__rail {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  /* vertical room so the hover grow / shadow isn't clipped by overflow */
+  padding: 14px 2px 28px;
+  scrollbar-width: none;
+}
+.cat__rail::-webkit-scrollbar {
+  display: none;
+}
+/* ~4 cards across with a peek of the next; trim reveals the peek */
+.cat__rail .card {
+  flex: 0 0 calc((100% - 60px) / 4 - 18px);
 }
 
 .card {
@@ -188,7 +223,7 @@ a {
 .card:hover .card__media,
 .card:focus-visible .card__media {
   transform: scale(1.03);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.13);
 }
 
 .card:hover .card__caption,
@@ -967,9 +1002,9 @@ a {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
-  .work__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
+  /* Tablet: ~3 cards across with a peek */
+  .cat__rail .card {
+    flex: 0 0 calc((100% - 40px) / 3 - 16px);
   }
   .about-section {
     grid-template-columns: 150px 1fr;
@@ -998,9 +1033,15 @@ a {
   .work {
     padding: 44px 18px 72px;
   }
-  .work__grid {
-    grid-template-columns: 1fr;
-    gap: 22px;
+  /* Phone: ~2 cards across with a peek */
+  .cat {
+    margin-top: 44px;
+  }
+  .cat__title {
+    font-size: 1.3rem;
+  }
+  .cat__rail .card {
+    flex: 0 0 calc((100% - 20px) / 2 - 16px);
   }
   .project {
     padding: 0 18px;

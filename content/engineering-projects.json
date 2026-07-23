@@ -4,6 +4,39 @@
     "tagline": "Product Design Portfolio",
     "name": "Justin Peck"
   },
+  "groups": [
+    {
+      "name": "Internships",
+      "slugs": [
+        "sram-rockshox-rear-shock",
+        "sram-front-derailleur",
+        "apple-watch-ultra-2-and-series-10",
+        "calfee-design-full-suspension-mountain-bike"
+      ]
+    },
+    {
+      "name": "Personal Projects",
+      "slugs": [
+        "bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike",
+        "human-powered-vehicle-drivetrain",
+        "eagle-scout-project-trailhead-signboard",
+        "bike-builders-of-berkeley-steel-full-suspension-mountain-bike",
+        "bike-builders-of-berkeley-parametric-frame"
+      ]
+    },
+    {
+      "name": "Class Projects",
+      "slugs": [
+        "uc-berkeley-meche-102b-mechatronics-design",
+        "uc-berkeley-meche-130-linkage-synthesis-and-analysis",
+        "uc-berkeley-meche-127-composites",
+        "uc-berkeley-meche-100-rc-car-project",
+        "uc-berkeley-meche-103-experimentation-and-measurements",
+        "uc-berkeley-engineering-29-cereal-cup-project",
+        "uc-berkeley-engineering-26-wind-turbine-project"
+      ]
+    }
+  ],
   "projects": [
     {
       "slug": "sram-rockshox-rear-shock",
