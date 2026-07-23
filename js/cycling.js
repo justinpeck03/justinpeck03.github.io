@@ -171,7 +171,7 @@
     if (!bySeason) return "";
     const years = Object.keys(bySeason).sort((a, b) => b.localeCompare(a));
     const blocks = years
-      .map(function (year, i) {
+      .map(function (year) {
         const rows = (bySeason[year] || [])
           .map(
             (r) =>
@@ -185,9 +185,7 @@
           )
           .join("");
         return (
-          '<details class="season"' +
-          (i === 0 ? " open" : "") +
-          ">" +
+          '<details class="season">' +
           '<summary class="season__summary"><span>' +
           esc(year) +
           ' Season</span><span class="season__count">' +
