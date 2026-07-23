@@ -17,18 +17,65 @@
       "highlights": [
         "SIDLuxe Ultimate Flight Attendant Rear Shock",
         "Rear Shock Components",
-        "Positive Volume Toke CAD",
+        "Positive Volume Token CAD",
         "Positive Volume Token",
         "Damper Simulation (MATLAB)",
         "Dyno Force/Velocity Curves"
       ],
       "images": [
-        "assets/images/engineering/sram-rockshox-rear-shock/01.png",
-        "assets/images/engineering/sram-rockshox-rear-shock/02.png",
-        "assets/images/engineering/sram-rockshox-rear-shock/03.png",
-        "assets/images/engineering/sram-rockshox-rear-shock/04.jpg",
-        "assets/images/engineering/sram-rockshox-rear-shock/05.png",
-        "assets/images/engineering/sram-rockshox-rear-shock/06.png"
+        {
+          "src": "assets/images/engineering/sram-rockshox-rear-shock/01.png",
+          "ar": 0.8392
+        },
+        {
+          "src": "assets/images/engineering/sram-rockshox-rear-shock/02.png",
+          "ar": 1.2892
+        },
+        {
+          "src": "assets/images/engineering/sram-rockshox-rear-shock/03.png",
+          "ar": 1.0619
+        },
+        {
+          "src": "assets/images/engineering/sram-rockshox-rear-shock/04.jpg",
+          "ar": 1.0
+        },
+        {
+          "src": "assets/images/engineering/sram-rockshox-rear-shock/05.png",
+          "ar": 1.1946
+        },
+        {
+          "src": "assets/images/engineering/sram-rockshox-rear-shock/06.png",
+          "ar": 1.8054
+        }
+      ],
+      "layout": [
+        {
+          "t": "aside",
+          "p": 0,
+          "img": 0
+        },
+        {
+          "t": "large",
+          "img": 1
+        },
+        {
+          "t": "text",
+          "p": 1
+        },
+        {
+          "t": "row",
+          "img": [
+            2,
+            3
+          ]
+        },
+        {
+          "t": "row",
+          "img": [
+            4,
+            5
+          ]
+        }
       ]
     },
     {
@@ -49,12 +96,59 @@
         "Torsional Spring"
       ],
       "images": [
-        "assets/images/engineering/sram-front-derailleur/01.png",
-        "assets/images/engineering/sram-front-derailleur/02.png",
-        "assets/images/engineering/sram-front-derailleur/03.png",
-        "assets/images/engineering/sram-front-derailleur/04.png",
-        "assets/images/engineering/sram-front-derailleur/05.png",
-        "assets/images/engineering/sram-front-derailleur/06.png"
+        {
+          "src": "assets/images/engineering/sram-front-derailleur/01.png",
+          "ar": 1.0
+        },
+        {
+          "src": "assets/images/engineering/sram-front-derailleur/02.png",
+          "ar": 0.8893
+        },
+        {
+          "src": "assets/images/engineering/sram-front-derailleur/03.png",
+          "ar": 0.898
+        },
+        {
+          "src": "assets/images/engineering/sram-front-derailleur/04.png",
+          "ar": 0.92
+        },
+        {
+          "src": "assets/images/engineering/sram-front-derailleur/05.png",
+          "ar": 1.0997
+        },
+        {
+          "src": "assets/images/engineering/sram-front-derailleur/06.png",
+          "ar": 0.7678
+        }
+      ],
+      "layout": [
+        {
+          "t": "text",
+          "p": 0
+        },
+        {
+          "t": "large",
+          "img": 0
+        },
+        {
+          "t": "text",
+          "p": 1
+        },
+        {
+          "t": "row",
+          "img": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "t": "row",
+          "img": [
+            4,
+            5
+          ]
+        }
       ]
     },
     {
@@ -72,9 +166,18 @@
         "Ultra 2 Housing: iFixit"
       ],
       "images": [
-        "assets/images/engineering/apple-watch-ultra-2-and-series-10/01.jpg",
-        "assets/images/engineering/apple-watch-ultra-2-and-series-10/02.png",
-        "assets/images/engineering/apple-watch-ultra-2-and-series-10/03.jpg"
+        {
+          "src": "assets/images/engineering/apple-watch-ultra-2-and-series-10/01.jpg",
+          "ar": 1.7778
+        },
+        {
+          "src": "assets/images/engineering/apple-watch-ultra-2-and-series-10/02.png",
+          "ar": 1.1253
+        },
+        {
+          "src": "assets/images/engineering/apple-watch-ultra-2-and-series-10/03.jpg",
+          "ar": 1.6667
+        }
       ]
     },
     {
@@ -100,15 +203,42 @@
         "Retrofit CNC Mill"
       ],
       "images": [
-        "assets/images/engineering/calfee-design-full-suspension-mountain-bike/01.png",
-        "assets/images/engineering/calfee-design-full-suspension-mountain-bike/02.jpg",
-        "assets/images/engineering/calfee-design-full-suspension-mountain-bike/03.png",
-        "assets/images/engineering/calfee-design-carbon-fiber-dropouts/01.png",
-        "assets/images/engineering/calfee-design-carbon-fiber-dropouts/02.png",
-        "assets/images/engineering/calfee-design-carbon-fiber-dropouts/03.png",
-        "assets/images/engineering/calfee-design-carbon-fiber-dropouts/04.jpg",
-        "assets/images/engineering/calfee-design-carbon-fiber-dropouts/05.png",
-        "assets/images/engineering/calfee-design-carbon-fiber-dropouts/06.jpg"
+        {
+          "src": "assets/images/engineering/calfee-design-full-suspension-mountain-bike/01.png",
+          "ar": 1.4524
+        },
+        {
+          "src": "assets/images/engineering/calfee-design-full-suspension-mountain-bike/02.jpg",
+          "ar": 2.213
+        },
+        {
+          "src": "assets/images/engineering/calfee-design-full-suspension-mountain-bike/03.png",
+          "ar": 1.1607
+        },
+        {
+          "src": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/01.png",
+          "ar": 0.8576
+        },
+        {
+          "src": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/02.png",
+          "ar": 1.4088
+        },
+        {
+          "src": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/03.png",
+          "ar": 1.2185
+        },
+        {
+          "src": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/04.jpg",
+          "ar": 1.3335
+        },
+        {
+          "src": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/05.png",
+          "ar": 1.6
+        },
+        {
+          "src": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/06.jpg",
+          "ar": 1.3333
+        }
       ]
     },
     {
@@ -124,12 +254,30 @@
       ],
       "highlights": [],
       "images": [
-        "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/01.jpg",
-        "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/02.png",
-        "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/03.jpg",
-        "assets/images/engineering/bike-builders-of-berkeley-welding-jig/01.jpg",
-        "assets/images/engineering/bike-builders-of-berkeley-welding-jig/02.png",
-        "assets/images/engineering/bike-builders-of-berkeley-welding-jig/03.jpg"
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/01.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/02.png",
+          "ar": 1.0902
+        },
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/03.jpg",
+          "ar": 1.25
+        },
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-welding-jig/01.jpg",
+          "ar": 1.7778
+        },
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-welding-jig/02.png",
+          "ar": 1.5445
+        },
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-welding-jig/03.jpg",
+          "ar": 1.3333
+        }
       ]
     },
     {
@@ -143,9 +291,18 @@
       ],
       "highlights": [],
       "images": [
-        "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/01.png",
-        "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/02.jpg",
-        "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/03.jpg"
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/01.png",
+          "ar": 1.3069
+        },
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/02.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/03.jpg",
+          "ar": 1.3333
+        }
       ]
     },
     {
@@ -159,11 +316,26 @@
       ],
       "highlights": [],
       "images": [
-        "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/01.jpg",
-        "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/02.png",
-        "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/03.png",
-        "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/04.png",
-        "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/05.jpg"
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/01.jpg",
+          "ar": 1.5
+        },
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/02.png",
+          "ar": 0.9251
+        },
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/03.png",
+          "ar": 0.9744
+        },
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/04.png",
+          "ar": 1.2199
+        },
+        {
+          "src": "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/05.jpg",
+          "ar": 0.6667
+        }
       ]
     },
     {
@@ -184,15 +356,42 @@
         "Rear Hub Cross Section"
       ],
       "images": [
-        "assets/images/engineering/human-powered-vehicle-drivetrain/01.jpg",
-        "assets/images/engineering/human-powered-vehicle-drivetrain/02.jpg",
-        "assets/images/engineering/human-powered-vehicle-drivetrain/04.jpg",
-        "assets/images/engineering/human-powered-vehicle-drivetrain/05.jpg",
-        "assets/images/engineering/human-powered-vehicle-drivetrain/06.jpg",
-        "assets/images/engineering/human-powered-vehicle-drivetrain/07.jpg",
-        "assets/images/engineering/human-powered-vehicle-drivetrain/08.jpg",
-        "assets/images/engineering/human-powered-vehicle-drivetrain/09.jpg",
-        "assets/images/engineering/human-powered-vehicle-drivetrain/10.jpg"
+        {
+          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/01.jpg",
+          "ar": 1.7125
+        },
+        {
+          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/02.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/04.jpg",
+          "ar": 1.467
+        },
+        {
+          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/05.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/06.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/07.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/08.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/09.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/10.jpg",
+          "ar": 1.3333
+        }
       ]
     },
     {
@@ -206,10 +405,22 @@
       ],
       "highlights": [],
       "images": [
-        "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/01.png",
-        "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/02.png",
-        "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/03.png",
-        "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/04.png"
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/01.png",
+          "ar": 1.2094
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/02.png",
+          "ar": 1.0466
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/03.png",
+          "ar": 1.2972
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/04.png",
+          "ar": 1.234
+        }
       ]
     },
     {
@@ -223,10 +434,22 @@
       ],
       "highlights": [],
       "images": [
-        "assets/images/engineering/uc-berkeley-meche-127-composites/01.jpg",
-        "assets/images/engineering/uc-berkeley-meche-127-composites/02.jpg",
-        "assets/images/engineering/uc-berkeley-meche-127-composites/03.png",
-        "assets/images/engineering/uc-berkeley-meche-127-composites/04.png"
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-127-composites/01.jpg",
+          "ar": 1.5009
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-127-composites/02.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-127-composites/03.png",
+          "ar": 1.1289
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-127-composites/04.png",
+          "ar": 1.3025
+        }
       ]
     },
     {
@@ -240,10 +463,47 @@
       ],
       "highlights": [],
       "images": [
-        "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/01.png",
-        "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/02.jpg",
-        "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/03.png",
-        "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/04.png"
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/01.png",
+          "ar": 1.7758
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/02.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/03.png",
+          "ar": 1.3077
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/04.png",
+          "ar": 2.4517
+        }
+      ],
+      "layout": [
+        {
+          "t": "text",
+          "p": 0
+        },
+        {
+          "t": "large",
+          "img": 0
+        },
+        {
+          "t": "row",
+          "img": [
+            1,
+            2
+          ]
+        },
+        {
+          "t": "text",
+          "p": 1
+        },
+        {
+          "t": "full",
+          "img": 3
+        }
       ]
     },
     {
@@ -258,8 +518,36 @@
       ],
       "highlights": [],
       "images": [
-        "assets/images/engineering/uc-berkeley-meche-100-rc-car-project/01.jpg",
-        "assets/images/engineering/uc-berkeley-meche-100-rc-car-project/02.jpg"
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-100-rc-car-project/01.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-100-rc-car-project/02.jpg",
+          "ar": 1.3333
+        }
+      ],
+      "layout": [
+        {
+          "t": "text",
+          "p": 0
+        },
+        {
+          "t": "full",
+          "img": 0
+        },
+        {
+          "t": "text",
+          "p": 1
+        },
+        {
+          "t": "full",
+          "img": 1
+        },
+        {
+          "t": "text",
+          "p": 2
+        }
       ]
     },
     {
@@ -276,10 +564,47 @@
         "Bullet Design"
       ],
       "images": [
-        "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/01.jpg",
-        "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/02.jpg",
-        "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/03.png",
-        "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/04.png"
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/01.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/02.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/03.png",
+          "ar": 1.9242
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/04.png",
+          "ar": 2.2749
+        }
+      ],
+      "layout": [
+        {
+          "t": "text",
+          "p": 0
+        },
+        {
+          "t": "row",
+          "img": [
+            0,
+            1
+          ]
+        },
+        {
+          "t": "text",
+          "p": 1
+        },
+        {
+          "t": "full",
+          "img": 2
+        },
+        {
+          "t": "full",
+          "img": 3
+        }
       ]
     },
     {
@@ -296,9 +621,43 @@
         "Cereal Cup Cross Section"
       ],
       "images": [
-        "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/01.jpg",
-        "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/02.jpg",
-        "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/03.jpg"
+        {
+          "src": "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/01.jpg",
+          "ar": 1.5178
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/02.jpg",
+          "ar": 0.75
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/03.jpg",
+          "ar": 0.75
+        }
+      ],
+      "layout": [
+        {
+          "t": "text",
+          "p": 0
+        },
+        {
+          "t": "single",
+          "img": 0
+        },
+        {
+          "t": "text",
+          "p": 1
+        },
+        {
+          "t": "row",
+          "img": [
+            1,
+            2
+          ]
+        },
+        {
+          "t": "text",
+          "p": 2
+        }
       ]
     },
     {
@@ -313,11 +672,26 @@
       ],
       "highlights": [],
       "images": [
-        "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/01.png",
-        "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/02.jpg",
-        "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/03.png",
-        "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/04.jpg",
-        "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/05.jpg"
+        {
+          "src": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/01.png",
+          "ar": 1.5686
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/02.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/03.png",
+          "ar": 0.9026
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/04.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/05.jpg",
+          "ar": 0.75
+        }
       ]
     },
     {
@@ -333,12 +707,66 @@
       ],
       "highlights": [],
       "images": [
-        "assets/images/engineering/eagle-scout-project-trailhead-signboard/01.jpg",
-        "assets/images/engineering/eagle-scout-project-trailhead-signboard/02.jpg",
-        "assets/images/engineering/eagle-scout-project-trailhead-signboard/03.png",
-        "assets/images/engineering/eagle-scout-project-trailhead-signboard/04.jpg",
-        "assets/images/engineering/eagle-scout-project-trailhead-signboard/05.jpg",
-        "assets/images/engineering/eagle-scout-project-trailhead-signboard/06.jpg"
+        {
+          "src": "assets/images/engineering/eagle-scout-project-trailhead-signboard/01.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/eagle-scout-project-trailhead-signboard/02.jpg",
+          "ar": 0.75
+        },
+        {
+          "src": "assets/images/engineering/eagle-scout-project-trailhead-signboard/03.png",
+          "ar": 1.7778
+        },
+        {
+          "src": "assets/images/engineering/eagle-scout-project-trailhead-signboard/04.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/eagle-scout-project-trailhead-signboard/05.jpg",
+          "ar": 1.3333
+        },
+        {
+          "src": "assets/images/engineering/eagle-scout-project-trailhead-signboard/06.jpg",
+          "ar": 1.3333
+        }
+      ],
+      "layout": [
+        {
+          "t": "text",
+          "p": 0
+        },
+        {
+          "t": "full",
+          "img": 0
+        },
+        {
+          "t": "text",
+          "p": 1
+        },
+        {
+          "t": "row",
+          "img": [
+            1,
+            3
+          ]
+        },
+        {
+          "t": "text",
+          "p": 2
+        },
+        {
+          "t": "row",
+          "img": [
+            4,
+            5
+          ]
+        },
+        {
+          "t": "text",
+          "p": 3
+        }
       ]
     }
   ]

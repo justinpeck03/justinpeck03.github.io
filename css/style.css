@@ -276,33 +276,64 @@ a {
   color: #33333a;
 }
 
-/* A row of two images side by side (fills the width); one image if odd */
-.proj-figs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  align-items: start;
-  margin-top: 32px;
-}
-.proj-figs--single {
-  grid-template-columns: minmax(0, 640px);
-}
-.proj-fig {
+/* Shared figure styling */
+.proj-flow figure {
   margin: 0;
   min-width: 0;
 }
-.proj-fig img {
+.proj-flow figure img {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 14px;
   background: var(--card-bg);
 }
-.proj-fig figcaption {
+.proj-flow figcaption {
   margin-top: 12px;
   color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.45;
+}
+
+/* Matched-height row: flex-grow is set per cell = aspect ratio, so every
+   image in the row renders at the same height and the row fills the width. */
+.proj-row {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  margin-top: 32px;
+}
+.proj-cell {
+  flex-grow: 1; /* overridden inline with the image aspect ratio */
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+/* Single-image blocks at varying widths */
+.proj-single {
+  margin-top: 32px;
+}
+.proj-single--large figure {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.proj-single--single figure {
+  max-width: 640px;
+}
+
+/* Text beside a tall image on the right */
+.proj-aside {
+  display: grid;
+  grid-template-columns: 1fr 0.72fr;
+  gap: 44px;
+  align-items: start;
+  margin-top: 48px;
+}
+.proj-aside__text p {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #33333a;
 }
 
 /* "More projects" horizontal-scroll rail at the bottom of a project page */
@@ -980,19 +1011,35 @@ a {
   .proj-flow {
     padding-top: 20px;
   }
-  .proj-text {
+  .proj-text,
+  .proj-aside__text {
     max-width: 100%;
     margin-top: 36px;
   }
-  .proj-text p {
+  .proj-text p,
+  .proj-aside__text p {
     font-size: 1.05rem;
   }
-  /* Stack image pairs on phones */
-  .proj-figs,
-  .proj-figs--single {
-    grid-template-columns: 1fr;
+  .proj-aside__text {
+    margin-top: 0;
+  }
+  /* Stack rows, asides, and constrained singles full-width on phones */
+  .proj-row,
+  .proj-aside {
+    display: flex;
+    flex-direction: column;
     gap: 18px;
     margin-top: 24px;
+  }
+  .proj-cell {
+    flex-basis: auto;
+  }
+  .proj-single {
+    margin-top: 24px;
+  }
+  .proj-single--large figure,
+  .proj-single--single figure {
+    max-width: 100%;
   }
   .more {
     margin-top: 64px;

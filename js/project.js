@@ -30,6 +30,9 @@
   function srcOf(entry) {
     return typeof entry === "string" ? entry : entry.src;
   }
+  function arOf(entry) {
+    return entry && typeof entry === "object" && entry.ar ? entry.ar : 1;
+  }
 
   function renderProject(p) {
     const esc = Portfolio.escapeHtml;
@@ -45,57 +48,111 @@
       "</h1>";
     root.appendChild(header);
 
-    const paras = p.paragraphs || [];
-    const images = p.images || [];
-    const highlights = p.highlights || []; // highlights[i] captions images[i]
-
-    // Interleave: text, image image, text, image image … keeping each
-    // paragraph intact. Leftover images continue as pairs; leftover
-    // paragraphs continue as text.
     const flow = document.createElement("div");
     flow.className = "proj-flow";
+    const layout = p.layout && p.layout.length ? p.layout : defaultLayout(p);
+    layout.forEach((block) => flow.appendChild(renderBlock(block, p)));
+    root.appendChild(flow);
+  }
 
+  // Default flow when a project has no explicit layout: text, image image,
+  // text, image image … keeping each paragraph intact.
+  function defaultLayout(p) {
+    const nParas = (p.paragraphs || []).length;
+    const nImgs = (p.images || []).length;
+    const blocks = [];
     let pi = 0;
     let ii = 0;
-    while (pi < paras.length || ii < images.length) {
-      if (pi < paras.length) {
-        const text = document.createElement("div");
-        text.className = "proj-text";
-        const el = document.createElement("p");
-        el.textContent = paras[pi];
-        text.appendChild(el);
-        flow.appendChild(text);
+    while (pi < nParas || ii < nImgs) {
+      if (pi < nParas) {
+        blocks.push({ t: "text", p: pi });
         pi += 1;
       }
-      if (ii < images.length) {
-        const pair = images.slice(ii, ii + 2);
-        const figs = document.createElement("div");
-        figs.className =
-          "proj-figs" + (pair.length === 1 ? " proj-figs--single" : "");
-        pair.forEach((entry, j) => {
-          const globalIndex = ii + j;
-          const fig = document.createElement("figure");
-          fig.className = "proj-fig";
-
-          const img = document.createElement("img");
-          img.src = srcOf(entry);
-          img.alt = p.title;
-          img.loading = "lazy";
-          fig.appendChild(img);
-
-          const caption = highlights[globalIndex];
-          if (caption) {
-            const cap = document.createElement("figcaption");
-            cap.textContent = caption;
-            fig.appendChild(cap);
-          }
-          figs.appendChild(fig);
-        });
-        flow.appendChild(figs);
-        ii += pair.length;
+      if (ii < nImgs) {
+        const pair = [];
+        for (let k = 0; k < 2 && ii < nImgs; k++) {
+          pair.push(ii);
+          ii += 1;
+        }
+        blocks.push(pair.length === 1 ? { t: "single", img: pair[0] } : { t: "row", img: pair });
       }
     }
-    root.appendChild(flow);
+    return blocks;
+  }
+
+  // Build a <figure> for image index `idx`, captioning it from highlights[idx].
+  function figureFor(p, idx, className) {
+    const images = p.images || [];
+    const highlights = p.highlights || [];
+    const fig = document.createElement("figure");
+    if (className) fig.className = className;
+
+    const img = document.createElement("img");
+    img.src = srcOf(images[idx]);
+    img.alt = p.title;
+    img.loading = "lazy";
+    fig.appendChild(img);
+
+    const caption = highlights[idx];
+    if (caption) {
+      const cap = document.createElement("figcaption");
+      cap.textContent = caption;
+      fig.appendChild(cap);
+    }
+    return fig;
+  }
+
+  function renderBlock(block, p) {
+    if (block.t === "text") {
+      const d = document.createElement("div");
+      d.className = "proj-text";
+      const el = document.createElement("p");
+      el.textContent = (p.paragraphs || [])[block.p] || "";
+      d.appendChild(el);
+      return d;
+    }
+
+    if (block.t === "aside") {
+      const d = document.createElement("div");
+      d.className = "proj-aside";
+      const t = document.createElement("div");
+      t.className = "proj-aside__text";
+      const el = document.createElement("p");
+      el.textContent = (p.paragraphs || [])[block.p] || "";
+      t.appendChild(el);
+      d.appendChild(t);
+      d.appendChild(figureFor(p, block.img));
+      return d;
+    }
+
+    if (block.t === "row") {
+      const d = document.createElement("div");
+      d.className = "proj-row";
+      const images = p.images || [];
+      block.img.forEach((idx) => {
+        const cell = figureFor(p, idx, "proj-cell");
+        // flex-grow proportional to aspect ratio -> equal heights across the
+        // row. Seed with the stored ratio, then correct from the image's real
+        // dimensions once it loads (authoritative, avoids bad metadata).
+        cell.style.flexGrow = String(arOf(images[idx]));
+        const img = cell.querySelector("img");
+        const applyAR = () => {
+          if (img.naturalWidth && img.naturalHeight) {
+            cell.style.flexGrow = String(img.naturalWidth / img.naturalHeight);
+          }
+        };
+        if (img.complete) applyAR();
+        img.addEventListener("load", applyAR);
+        d.appendChild(cell);
+      });
+      return d;
+    }
+
+    // full / large / single -> one image at varying widths
+    const d = document.createElement("div");
+    d.className = "proj-single proj-single--" + block.t;
+    d.appendChild(figureFor(p, block.img));
+    return d;
   }
 
   function renderMore(projects, current) {
