@@ -72,6 +72,7 @@
     return (
       '<section class="cy-bio">' +
       '<div class="cy-bio__text">' +
+      '<h1 class="cy-bio__headline">Justin Peck</h1>' +
       paras +
       details +
       "</div>" +
