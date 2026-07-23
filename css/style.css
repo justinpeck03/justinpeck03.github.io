@@ -87,35 +87,11 @@ a {
   color: var(--text-primary);
 }
 
-/* ---------- Hero ---------- */
-.hero {
-  max-width: var(--maxw);
-  margin: 0 auto;
-  padding: 88px 22px 56px;
-}
-
-.hero__lede {
-  margin: 0 0 14px;
-  font-size: clamp(1.8rem, 4.5vw, 2.9rem);
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-}
-
-.hero__text {
-  margin: 0;
-  max-width: 640px;
-  font-size: clamp(1.05rem, 2vw, 1.3rem);
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--text-secondary);
-}
-
 /* ---------- Work grid ---------- */
 .work {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 0 22px 96px;
+  padding: 64px 22px 96px;
 }
 
 .work__grid {
@@ -660,18 +636,6 @@ a {
   align-items: center;
   padding: 72px 0 84px;
 }
-.cy-bio__headline {
-  margin: 0 0 8px;
-  font-size: clamp(2.4rem, 6vw, 4rem);
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1;
-}
-.cy-bio__license {
-  margin: 0 0 24px;
-  color: var(--text-muted);
-  font-size: 0.95rem;
-}
 .cy-bio__text p {
   margin: 0 0 20px;
   font-size: 1.1rem;
@@ -976,11 +940,8 @@ a {
   .nav__links {
     gap: 20px;
   }
-  .hero {
-    padding: 56px 18px 40px;
-  }
   .work {
-    padding: 0 18px 72px;
+    padding: 44px 18px 72px;
   }
   .work__grid {
     grid-template-columns: 1fr;
