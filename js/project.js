@@ -13,7 +13,7 @@
       const project = projects.find((p) => p.slug === slug);
       if (!project) {
         root.innerHTML =
-          '<p class="fallback">Project not found. <a href="index.html">Back to all work</a>.</p>';
+          '<p class="fallback">Project not found. <a href="work.html">Back to all work</a>.</p>';
         return;
       }
       document.title = "Justin Peck — " + project.title;
@@ -27,19 +27,8 @@
         "). Serve the site over http (not a file:// path).</p>";
     });
 
-  function imgSrc(entry) {
+  function srcOf(entry) {
     return typeof entry === "string" ? entry : entry.src;
-  }
-  function imgCaption(entry) {
-    return typeof entry === "string" ? "" : entry.caption || "";
-  }
-
-  // Lead with the chosen thumbnail, then the remaining images in order.
-  function orderedImages(project) {
-    const imgs = (project.images || []).slice();
-    const i = imgs.findIndex((e) => imgSrc(e) === project.thumbnail);
-    if (i > 0) imgs.unshift(imgs.splice(i, 1)[0]);
-    return imgs;
   }
 
   function renderProject(p) {
@@ -48,7 +37,7 @@
     const header = document.createElement("header");
     header.className = "project__header";
     header.innerHTML =
-      '<a class="project__back" href="index.html">&larr; All work</a>' +
+      '<a class="project__back" href="work.html">&larr; All work</a>' +
       '<p class="project__eyebrow">' +
       esc(p.category) +
       '</p><h1 class="project__title">' +
@@ -56,52 +45,57 @@
       "</h1>";
     root.appendChild(header);
 
-    if (p.paragraphs && p.paragraphs.length) {
-      const body = document.createElement("div");
-      body.className = "project__body";
-      p.paragraphs.forEach((para) => {
+    const paras = p.paragraphs || [];
+    const images = p.images || [];
+    const highlights = p.highlights || []; // highlights[i] captions images[i]
+
+    // Interleave: text, image image, text, image image … keeping each
+    // paragraph intact. Leftover images continue as pairs; leftover
+    // paragraphs continue as text.
+    const flow = document.createElement("div");
+    flow.className = "proj-flow";
+
+    let pi = 0;
+    let ii = 0;
+    while (pi < paras.length || ii < images.length) {
+      if (pi < paras.length) {
+        const text = document.createElement("div");
+        text.className = "proj-text";
         const el = document.createElement("p");
-        el.textContent = para;
-        body.appendChild(el);
-      });
-      root.appendChild(body);
+        el.textContent = paras[pi];
+        text.appendChild(el);
+        flow.appendChild(text);
+        pi += 1;
+      }
+      if (ii < images.length) {
+        const pair = images.slice(ii, ii + 2);
+        const figs = document.createElement("div");
+        figs.className =
+          "proj-figs" + (pair.length === 1 ? " proj-figs--single" : "");
+        pair.forEach((entry, j) => {
+          const globalIndex = ii + j;
+          const fig = document.createElement("figure");
+          fig.className = "proj-fig";
+
+          const img = document.createElement("img");
+          img.src = srcOf(entry);
+          img.alt = p.title;
+          img.loading = "lazy";
+          fig.appendChild(img);
+
+          const caption = highlights[globalIndex];
+          if (caption) {
+            const cap = document.createElement("figcaption");
+            cap.textContent = caption;
+            fig.appendChild(cap);
+          }
+          figs.appendChild(fig);
+        });
+        flow.appendChild(figs);
+        ii += pair.length;
+      }
     }
-
-    if (p.highlights && p.highlights.length) {
-      const tags = document.createElement("ul");
-      tags.className = "project__tags";
-      p.highlights.forEach((h) => {
-        const li = document.createElement("li");
-        li.textContent = h;
-        tags.appendChild(li);
-      });
-      root.appendChild(tags);
-    }
-
-    const images = orderedImages(p);
-    if (images.length) {
-      const gallery = document.createElement("div");
-      gallery.className = "gallery";
-      images.forEach((entry) => {
-        const fig = document.createElement("figure");
-        fig.className = "gallery__item";
-
-        const img = document.createElement("img");
-        img.src = imgSrc(entry);
-        img.alt = p.title;
-        img.loading = "lazy";
-        fig.appendChild(img);
-
-        const caption = imgCaption(entry);
-        if (caption) {
-          const cap = document.createElement("figcaption");
-          cap.textContent = caption;
-          fig.appendChild(cap);
-        }
-        gallery.appendChild(fig);
-      });
-      root.appendChild(gallery);
-    }
+    root.appendChild(flow);
   }
 
   function renderMore(projects, current) {

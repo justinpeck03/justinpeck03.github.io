@@ -256,68 +256,53 @@ a {
   letter-spacing: -0.02em;
 }
 
-.project__body {
-  max-width: 680px;
-  padding-top: 32px;
+/* Interleaved text + image flow: text, image image, text, image image … */
+.proj-flow {
+  padding-top: 28px;
+}
+.proj-flow > *:first-child {
+  margin-top: 0;
 }
 
-.project__body p {
-  margin: 0 0 22px;
+/* Text sits in a readable column, leaving white space on the right (desktop) */
+.proj-text {
+  max-width: 680px;
+  margin-top: 48px;
+}
+.proj-text p {
+  margin: 0;
   font-size: 1.15rem;
   line-height: 1.65;
   color: #33333a;
 }
 
-.project__tags {
-  list-style: none;
-  margin: 10px 0 0;
-  padding: 0;
-  max-width: 820px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+/* A row of two images side by side (fills the width); one image if odd */
+.proj-figs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+  margin-top: 32px;
 }
-
-.project__tags li {
-  padding: 7px 15px;
-  background: var(--card-bg);
-  border-radius: 999px;
-  color: var(--text-secondary);
-  font-size: 0.85rem;
+.proj-figs--single {
+  grid-template-columns: minmax(0, 640px);
 }
-
-.gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  padding: 60px 0 8px;
-}
-
-.gallery__item {
+.proj-fig {
   margin: 0;
-  width: 100%;
-  max-width: 900px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-width: 0;
 }
-
-.gallery__item img {
+.proj-fig img {
   display: block;
-  max-width: 100%;
-  max-height: 78vh; /* keep tall portrait renders from dominating the page */
-  width: auto;
+  width: 100%;
   height: auto;
-  border-radius: 16px;
+  border-radius: 14px;
   background: var(--card-bg);
 }
-
-.gallery__item figcaption {
+.proj-fig figcaption {
   margin-top: 12px;
   color: var(--text-secondary);
   font-size: 0.9rem;
-  text-align: center;
+  line-height: 1.45;
 }
 
 /* "More projects" horizontal-scroll rail at the bottom of a project page */
@@ -991,6 +976,23 @@ a {
   }
   .project__header {
     padding-top: 44px;
+  }
+  .proj-flow {
+    padding-top: 20px;
+  }
+  .proj-text {
+    max-width: 100%;
+    margin-top: 36px;
+  }
+  .proj-text p {
+    font-size: 1.05rem;
+  }
+  /* Stack image pairs on phones */
+  .proj-figs,
+  .proj-figs--single {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 24px;
   }
   .more {
     margin-top: 64px;

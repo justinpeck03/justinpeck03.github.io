@@ -9,7 +9,7 @@
       "slug": "sram-rockshox-rear-shock",
       "category": "SRAM / RockShox",
       "title": "Rear Shock",
-      "thumbnail": "assets/images/engineering/sram-rockshox-rear-shock/02.png",
+      "thumbnail": "assets/images/engineering/sram-rockshox-rear-shock/01.png",
       "paragraphs": [
         "As a design engineer intern at SRAM, I worked on the RockShox team to help develop the next generation of mountain bike suspension. I designed, prototyped, and tested injection molded spacers and volume tokens for the air spring in the next SIDLuxe cross country rear shock. I then ran air spring calculations using the positive and negative air chamber volumes obtained from CAD.",
         "Some of my other projects focused on designing and tuning hydraulic dampers. I completed concept CAD and ran MATLAB simulations for external adjustable compression/rebound damping on the Vivid downhill shock. Additionally I rebuilt many SIDLuxe shocks with different shim configurations and ran dyno tests to determine the ideal force/velocity curves. I also did lots of ride testing on the prototypes to correlate these numbers to real world feel on the bike!"
@@ -22,45 +22,19 @@
         "Air Volume CAD"
       ],
       "images": [
-        {
-          "src": "assets/images/engineering/sram-rockshox-rear-shock/01.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/sram-rockshox-rear-shock/02.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/sram-rockshox-rear-shock/03.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/sram-rockshox-rear-shock/04.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/sram-rockshox-rear-shock/05.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/sram-rockshox-rear-shock/06.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/sram-rockshox-rear-shock/07.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/sram-rockshox-rear-shock/08.png",
-          "caption": ""
-        }
+        "assets/images/engineering/sram-rockshox-rear-shock/01.png",
+        "assets/images/engineering/sram-rockshox-rear-shock/02.png",
+        "assets/images/engineering/sram-rockshox-rear-shock/03.png",
+        "assets/images/engineering/sram-rockshox-rear-shock/04.jpg",
+        "assets/images/engineering/sram-rockshox-rear-shock/05.png",
+        "assets/images/engineering/sram-rockshox-rear-shock/06.png"
       ]
     },
     {
       "slug": "sram-front-derailleur",
       "category": "SRAM",
       "title": "Front Derailleur",
-      "thumbnail": "assets/images/engineering/sram-front-derailleur/04.png",
+      "thumbnail": "assets/images/engineering/sram-front-derailleur/01.png",
       "paragraphs": [
         "As a design engineer intern at SRAM, I worked on the front derailleur team to develop the next-generation product. I assisted the team with multiple projects, including designing molds and prototyping in-house silicone injection molded parts. I also designed test fixtures and created drawings to help integrate acquired parts into SRAM’s system.",
         "My primary focus of the internship was redesigning the inner link and torsional spring of the front derailleur mechanism. I evaluated multiple link material options in the concept phase and optimized the design to achieve a 51% lighter, 44% stiffer, and 10x less expensive part than the previous generation. I prototyped both aluminum and glass-filled nylon links and performed stiffness testing to correlate data to my FEA predictions. For the injection molded part, I learned draft and mold flow analysis and worked with the vendor to hit critical tolerances on the integrated bushing geometry."
@@ -74,26 +48,12 @@
         "Molded Link"
       ],
       "images": [
-        {
-          "src": "assets/images/engineering/sram-front-derailleur/01.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/sram-front-derailleur/02.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/sram-front-derailleur/03.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/sram-front-derailleur/04.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/sram-front-derailleur/05.png",
-          "caption": ""
-        }
+        "assets/images/engineering/sram-front-derailleur/01.png",
+        "assets/images/engineering/sram-front-derailleur/02.png",
+        "assets/images/engineering/sram-front-derailleur/03.png",
+        "assets/images/engineering/sram-front-derailleur/04.png",
+        "assets/images/engineering/sram-front-derailleur/05.png",
+        "assets/images/engineering/sram-front-derailleur/06.png"
       ]
     },
     {
@@ -111,18 +71,9 @@
         "Watch Series 10"
       ],
       "images": [
-        {
-          "src": "assets/images/engineering/apple-watch-ultra-2-and-series-10/01.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/apple-watch-ultra-2-and-series-10/02.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/apple-watch-ultra-2-and-series-10/03.png",
-          "caption": ""
-        }
+        "assets/images/engineering/apple-watch-ultra-2-and-series-10/01.jpg",
+        "assets/images/engineering/apple-watch-ultra-2-and-series-10/02.png",
+        "assets/images/engineering/apple-watch-ultra-2-and-series-10/03.jpg"
       ]
     },
     {
@@ -144,42 +95,9 @@
         "DS Dropout"
       ],
       "images": [
-        {
-          "src": "assets/images/engineering/calfee-design-full-suspension-mountain-bike/01.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/calfee-design-full-suspension-mountain-bike/02.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/calfee-design-full-suspension-mountain-bike/03.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/01.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/02.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/03.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/04.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/05.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/calfee-design-carbon-fiber-dropouts/06.jpg",
-          "caption": ""
-        }
+        "assets/images/engineering/calfee-design-full-suspension-mountain-bike/01.png",
+        "assets/images/engineering/calfee-design-full-suspension-mountain-bike/02.jpg",
+        "assets/images/engineering/calfee-design-full-suspension-mountain-bike/03.png"
       ]
     },
     {
@@ -195,55 +113,25 @@
       ],
       "highlights": [],
       "images": [
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/01.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/02.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/03.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-welding-jig/01.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-welding-jig/02.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-welding-jig/03.jpg",
-          "caption": ""
-        }
+        "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/01.jpg",
+        "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/02.png",
+        "assets/images/engineering/bike-builders-of-berkeley-parametric-frame/03.jpg"
       ]
     },
     {
       "slug": "bike-builders-of-berkeley-steel-full-suspension-mountain-bike",
       "category": "Bike Builders of Berkeley",
       "title": "Steel Full Suspension Mountain Bike",
-      "thumbnail": "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/03.jpg",
+      "thumbnail": "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/01.png",
       "paragraphs": [
         "Our first complex Bike Builders of Berkeley project was a steel full suspension mountain bike. This unique idea features a linkage design that passes through the center of the frame with custom links and pivot hardware.",
         "As one of the project leads, I managed a team throughout the months of design and manufacturing. I led workshops to teach our new members the basics of CAD design, drawings, and machining as they each created individual parts for the bike. I was also involved in the machining of the more advanced components and the welding of the frame."
       ],
       "highlights": [],
       "images": [
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/01.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/02.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/03.jpg",
-          "caption": ""
-        }
+        "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/01.png",
+        "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/02.jpg",
+        "assets/images/engineering/bike-builders-of-berkeley-steel-full-suspension-mountain-bike/03.jpg"
       ]
     },
     {
@@ -257,26 +145,11 @@
       ],
       "highlights": [],
       "images": [
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/01.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/02.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/03.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/04.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/05.png",
-          "caption": ""
-        }
+        "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/01.jpg",
+        "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/02.png",
+        "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/03.png",
+        "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/04.png",
+        "assets/images/engineering/bike-builders-of-berkeley-lugged-carbon-fiber-downhill-bike/05.jpg"
       ]
     },
     {
@@ -298,100 +171,49 @@
         "Rear Hub Cross Section"
       ],
       "images": [
-        {
-          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/01.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/02.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/03.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/04.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/05.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/06.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/07.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/08.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/human-powered-vehicle-drivetrain/09.jpg",
-          "caption": ""
-        }
+        "assets/images/engineering/human-powered-vehicle-drivetrain/01.jpg",
+        "assets/images/engineering/human-powered-vehicle-drivetrain/02.jpg",
+        "assets/images/engineering/human-powered-vehicle-drivetrain/04.jpg",
+        "assets/images/engineering/human-powered-vehicle-drivetrain/05.jpg",
+        "assets/images/engineering/human-powered-vehicle-drivetrain/06.jpg",
+        "assets/images/engineering/human-powered-vehicle-drivetrain/07.jpg",
+        "assets/images/engineering/human-powered-vehicle-drivetrain/08.jpg",
+        "assets/images/engineering/human-powered-vehicle-drivetrain/09.jpg",
+        "assets/images/engineering/human-powered-vehicle-drivetrain/10.jpg"
       ]
     },
     {
       "slug": "uc-berkeley-meche-130-linkage-synthesis-and-analysis",
       "category": "UC Berkeley MechE 130",
       "title": "Linkage Synthesis and Analysis",
-      "thumbnail": "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/03.png",
+      "thumbnail": "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/01.png",
       "paragraphs": [
         "The Planar Machinery class at UC Berkeley teaches the fundamentals of mechanism design, including graphical and mathematical synthesis and analysis of 6-bar linkages.",
         "For my final project, I applied the vector loop equations and force analysis techniques to mountain bike linkages. I wrote a MATLAB script to calculate leverage ratio and forces transmitted into the linkage throughout its travel as a function of the link lengths and initial position. These resultant forces were used to inform our FEA inputs in the Bike Builders DH bike project (slide 9)."
       ],
       "highlights": [],
       "images": [
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/01.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/02.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/03.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/04.png",
-          "caption": ""
-        }
+        "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/01.png",
+        "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/02.png",
+        "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/03.png",
+        "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/04.png"
       ]
     },
     {
       "slug": "uc-berkeley-meche-127-composites",
       "category": "UC Berkeley MechE 127",
       "title": "Composites",
-      "thumbnail": "assets/images/engineering/uc-berkeley-meche-127-composites/02.jpg",
+      "thumbnail": "assets/images/engineering/uc-berkeley-meche-127-composites/01.jpg",
       "paragraphs": [
         "The composites class at UC Berkeley teaches the theory behind material properties, using matrices to calculate overall composite strength and stiffness, as well as stress in individual layers and fibers to predict failure modes of a laminate.",
         "My project team focused on characterizing the bending properties of our custom filament wound carbon fiber tubes used for the Bike Builders downhill bike. I coordinated the Instron testing of our tube samples with various wrap angles, and helped visualize the stress/strain data in MATLAB to determine the bending modulus."
       ],
       "highlights": [],
       "images": [
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-127-composites/01.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-127-composites/02.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-127-composites/03.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-127-composites/04.png",
-          "caption": ""
-        }
+        "assets/images/engineering/uc-berkeley-meche-127-composites/01.jpg",
+        "assets/images/engineering/uc-berkeley-meche-127-composites/02.jpg",
+        "assets/images/engineering/uc-berkeley-meche-127-composites/03.png",
+        "assets/images/engineering/uc-berkeley-meche-127-composites/04.png"
       ]
     },
     {
@@ -407,22 +229,10 @@
         "Vortex Generator Website"
       ],
       "images": [
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/01.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/02.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/03.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/04.png",
-          "caption": ""
-        }
+        "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/01.png",
+        "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/02.jpg",
+        "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/03.png",
+        "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/04.png"
       ]
     },
     {
@@ -437,21 +247,15 @@
       ],
       "highlights": [],
       "images": [
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-100-rc-car-project/01.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-100-rc-car-project/02.jpg",
-          "caption": ""
-        }
+        "assets/images/engineering/uc-berkeley-meche-100-rc-car-project/01.jpg",
+        "assets/images/engineering/uc-berkeley-meche-100-rc-car-project/02.jpg"
       ]
     },
     {
       "slug": "uc-berkeley-meche-103-experimentation-and-measurements",
       "category": "UC Berkeley MechE 103",
       "title": "Experimentation and Measurements",
-      "thumbnail": "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/03.jpg",
+      "thumbnail": "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/01.jpg",
       "paragraphs": [
         "The experimentation and measurements class at UC Berkeley teaches design of experiments, data acquisition, and uncertainty analysis.",
         "For my project, I teamed up with two students on the solar vehicle team to do a wind tunnel analysis of two different architectures. I calibrated the strain gauges to measure lift and drag, and calculated the uncertainty propagation of the measured values. Our experiments determined that the bullet design is more aerodynamic than the catamaran design, but both produced less drag at small yaw angles."
@@ -461,29 +265,17 @@
         "Bullet Design"
       ],
       "images": [
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/01.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/02.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/03.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/04.jpg",
-          "caption": ""
-        }
+        "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/01.jpg",
+        "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/02.jpg",
+        "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/03.png",
+        "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/04.png"
       ]
     },
     {
       "slug": "uc-berkeley-engineering-29-cereal-cup-project",
       "category": "UC Berkeley Engineering 29",
       "title": "Cereal Cup Project",
-      "thumbnail": "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/02.jpg",
+      "thumbnail": "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/01.jpg",
       "paragraphs": [
         "The Manufacturing Design and Communication course at UC Berkeley also ended with a group project. The prompt was to design an attachment to an existing product that expands its capabilities.",
         "As a group of busy engineering students, we decided to make a cereal cup to go. It is custom lid compatible with standard wide mouth water bottles. Attached to the lid is a chamber that holds cereal, keeping it separated from the milk until it is turned upside down to drink.",
@@ -493,25 +285,16 @@
         "Cereal Cup Cross Section"
       ],
       "images": [
-        {
-          "src": "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/01.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/02.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/03.jpg",
-          "caption": ""
-        }
+        "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/01.jpg",
+        "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/02.jpg",
+        "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/03.jpg"
       ]
     },
     {
       "slug": "uc-berkeley-engineering-26-wind-turbine-project",
       "category": "UC Berkeley Engineering 26",
       "title": "Wind Turbine Project",
-      "thumbnail": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/05.jpg",
+      "thumbnail": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/01.png",
       "paragraphs": [
         "The Intro to CAD course at UC Berkeley culminates in a group project with the objective of building a wind turbine. This design challenge tests the power output of the blades and stiffness of the tower.",
         "My primary contribution was the modeling of the blades. I lofted 10 unique profiles to create an aerodynamic shape that generates lift at speed and increases the power output. For testing we connected the turbine blades to a generator. We used a blower to generate airflow and calculated the power output at different wind velocities.",
@@ -519,33 +302,18 @@
       ],
       "highlights": [],
       "images": [
-        {
-          "src": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/01.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/02.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/03.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/04.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/05.jpg",
-          "caption": ""
-        }
+        "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/01.png",
+        "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/02.jpg",
+        "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/03.png",
+        "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/04.jpg",
+        "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/05.jpg"
       ]
     },
     {
       "slug": "eagle-scout-project-trailhead-signboard",
       "category": "Eagle Scout Project",
       "title": "Trailhead Signboard",
-      "thumbnail": "assets/images/engineering/eagle-scout-project-trailhead-signboard/03.jpg",
+      "thumbnail": "assets/images/engineering/eagle-scout-project-trailhead-signboard/01.jpg",
       "paragraphs": [
         "For my Eagle Scout Project, I designed and constructed a trailhead signboard for the Soquel Demonstration State Forest. I worked closely with the Mountain Bikers of Santa Cruz and Cal Fire, the project beneficiaries.",
         "Once we decided on the idea, I created hand sketches and a simple CAD model of my design. I wrote a complete project plan, including a bill of materials, step by step instructions, and workday logistics. After presenting my proposal to my troop and local council, I received approval to start fundraising and purchasing the materials.",
@@ -554,30 +322,12 @@
       ],
       "highlights": [],
       "images": [
-        {
-          "src": "assets/images/engineering/eagle-scout-project-trailhead-signboard/01.png",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/eagle-scout-project-trailhead-signboard/02.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/eagle-scout-project-trailhead-signboard/03.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/eagle-scout-project-trailhead-signboard/04.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/eagle-scout-project-trailhead-signboard/05.jpg",
-          "caption": ""
-        },
-        {
-          "src": "assets/images/engineering/eagle-scout-project-trailhead-signboard/06.jpg",
-          "caption": ""
-        }
+        "assets/images/engineering/eagle-scout-project-trailhead-signboard/01.jpg",
+        "assets/images/engineering/eagle-scout-project-trailhead-signboard/02.jpg",
+        "assets/images/engineering/eagle-scout-project-trailhead-signboard/03.png",
+        "assets/images/engineering/eagle-scout-project-trailhead-signboard/04.jpg",
+        "assets/images/engineering/eagle-scout-project-trailhead-signboard/05.jpg",
+        "assets/images/engineering/eagle-scout-project-trailhead-signboard/06.jpg"
       ]
     }
   ]
