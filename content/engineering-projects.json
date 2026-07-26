@@ -40,7 +40,7 @@
   "projects": [
     {
       "slug": "sram-rockshox-rear-shock",
-      "category": "SRAM / RockShox",
+      "category": "RockShox",
       "title": "Rear Shock",
       "thumbnail": "assets/images/engineering/sram-rockshox-rear-shock/01.png",
       "paragraphs": [
@@ -187,7 +187,7 @@
     {
       "slug": "apple-watch-ultra-2-and-series-10",
       "category": "Apple",
-      "title": "Watch Ultra 2 and Series 10",
+      "title": "Watch",
       "thumbnail": "assets/images/engineering/apple-watch-ultra-2-and-series-10/01.jpg",
       "paragraphs": [
         "As a product design intern at Apple, I worked on several projects including parts within the Ultra 2 and Series 10. I designed a module-level assembly of 16 parts and determined the datum structure and tolerance analysis for CNC, die-cut, and IM components. A challenge of this project was water resistance at 5 bar, so I designed a custom o-ring seal and gland optimized for stretch, compression, and gland fill at MMC and LMC conditions.",
@@ -374,7 +374,7 @@
     {
       "slug": "human-powered-vehicle-drivetrain",
       "category": "Human Powered Vehicle",
-      "title": "Drivetrain",
+      "title": "High Speed Drivetrain",
       "thumbnail": "assets/images/engineering/human-powered-vehicle-drivetrain/01.jpg",
       "paragraphs": [
         "Human Powered Vehicle is an engineering club at UC Berkeley that has built many aerodynamic bicycles for competitions over the last few decades. We are currently designing a vehicle for the 2024 World Human Powered Speed Challenge.",
@@ -429,8 +429,8 @@
     },
     {
       "slug": "uc-berkeley-meche-130-linkage-synthesis-and-analysis",
-      "category": "UC Berkeley MechE 130",
-      "title": "Linkage Synthesis and Analysis",
+      "category": "Linkage Analysis",
+      "title": "Mountain Bike Linkage Design",
       "thumbnail": "assets/images/engineering/uc-berkeley-meche-130-linkage-synthesis-and-analysis/01.png",
       "paragraphs": [
         "The Planar Machinery class at UC Berkeley teaches the fundamentals of mechanism design, including graphical and mathematical synthesis and analysis of 6-bar linkages.",
@@ -458,8 +458,8 @@
     },
     {
       "slug": "uc-berkeley-meche-127-composites",
-      "category": "UC Berkeley MechE 127",
-      "title": "Composites",
+      "category": "Composites",
+      "title": "Carbon Fiber Tube Characterization",
       "thumbnail": "assets/images/engineering/uc-berkeley-meche-127-composites/01.jpg",
       "paragraphs": [
         "The composites class at UC Berkeley teaches the theory behind material properties, using matrices to calculate overall composite strength and stiffness, as well as stress in individual layers and fibers to predict failure modes of a laminate.",
@@ -487,8 +487,8 @@
     },
     {
       "slug": "uc-berkeley-meche-102b-mechatronics-design",
-      "category": "UC Berkeley MechE 102b",
-      "title": "Mechatronics Design",
+      "category": "Mechatronics Design",
+      "title": "Autonomously Deployed Vortex Generator Wing",
       "thumbnail": "assets/images/engineering/uc-berkeley-meche-102b-mechatronics-design/01.png",
       "paragraphs": [
         "The mechatronics design class at UC Berkeley teaches motor control and embedded programming. It culminates in a design capstone project that must include sensing, planning, and actuation.",
@@ -541,8 +541,8 @@
     },
     {
       "slug": "uc-berkeley-meche-100-rc-car-project",
-      "category": "UC Berkeley MechE 100",
-      "title": "RC Car Project",
+      "category": "Electronics",
+      "title": "Remote Control Car",
       "thumbnail": "assets/images/engineering/uc-berkeley-meche-100-rc-car-project/01.jpg",
       "paragraphs": [
         "The Internet of Things course at UC Berkeley teaches the basics of analog circuits and programming with a focus on wirelessly connected devices. After a semester of hands-on labs, the final project challenges students to build a device including sensing, communication, and actuation.",
@@ -585,8 +585,8 @@
     },
     {
       "slug": "uc-berkeley-meche-103-experimentation-and-measurements",
-      "category": "UC Berkeley MechE 103",
-      "title": "Experimentation and Measurements",
+      "category": "Experimentation and Measurements",
+      "title": "Wind Tunnel Drag Testing",
       "thumbnail": "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/01.jpg",
       "paragraphs": [
         "The experimentation and measurements class at UC Berkeley teaches design of experiments, data acquisition, and uncertainty analysis.",
@@ -642,8 +642,8 @@
     },
     {
       "slug": "uc-berkeley-engineering-29-cereal-cup-project",
-      "category": "UC Berkeley Engineering 29",
-      "title": "Cereal Cup Project",
+      "category": "Design Communication",
+      "title": "Cereal Cup Prototype",
       "thumbnail": "assets/images/engineering/uc-berkeley-engineering-29-cereal-cup-project/01.jpg",
       "paragraphs": [
         "The Manufacturing Design and Communication course at UC Berkeley also ended with a group project. The prompt was to design an attachment to an existing product that expands its capabilities.",
@@ -695,8 +695,8 @@
     },
     {
       "slug": "uc-berkeley-engineering-26-wind-turbine-project",
-      "category": "UC Berkeley Engineering 26",
-      "title": "Wind Turbine Project",
+      "category": "Computer Aided Design",
+      "title": "Wind Turbine Design",
       "thumbnail": "assets/images/engineering/uc-berkeley-engineering-26-wind-turbine-project/01.png",
       "paragraphs": [
         "The Intro to CAD course at UC Berkeley culminates in a group project with the objective of building a wind turbine. This design challenge tests the power output of the blades and stiffness of the tower.",

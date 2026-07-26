@@ -179,6 +179,16 @@ a {
   display: block;
 }
 
+/* Organization sits below the card and stays visible; the title is the
+   hover-revealed overlay on the image itself. */
+.card__org {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
 .card__media {
   position: relative;
   aspect-ratio: 4 / 3;
@@ -217,16 +227,10 @@ a {
   transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
 }
 
-.card__category {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  opacity: 0.85;
-}
-
 .card__title {
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   font-weight: 600;
+  line-height: 1.25;
   letter-spacing: -0.01em;
 }
 
@@ -455,36 +459,68 @@ a {
   display: block;
 }
 
+/* Matches the grid card: title overlays the image on hover, organization
+   stays visible below. */
+.rail-card__media {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--card-bg);
+  transition: transform 0.3s var(--ease);
+}
+
 .rail-card__img {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 12px;
-  background: var(--card-bg);
-  transition: transform 0.3s var(--ease);
 }
 
-.rail-card:hover .rail-card__img {
+.rail-card:hover .rail-card__media,
+.rail-card:focus-visible .rail-card__media {
   transform: scale(1.03);
 }
 
 .rail-card__caption {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  margin-top: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px 14px 12px;
+  color: #fff;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.35) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.rail-card:hover .rail-card__caption,
+.rail-card:focus-visible .rail-card__caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.rail-card:focus-visible {
+  outline: none;
 }
 
 .rail-card__title {
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 600;
+  line-height: 1.25;
   letter-spacing: -0.005em;
-  color: var(--text-primary);
 }
 
-.rail-card__category {
+.rail-card__org {
+  display: block;
+  margin-top: 8px;
   font-size: 0.8rem;
+  font-weight: 500;
   color: var(--text-secondary);
 }
 

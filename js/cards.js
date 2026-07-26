@@ -35,43 +35,53 @@ window.Portfolio = (function () {
     img.loading = "lazy";
     media.appendChild(img);
 
+    // Title overlays the image and is revealed on hover; the organization
+    // sits below the card so it is always readable.
     const caption = document.createElement("div");
     caption.className = "card__caption";
     caption.innerHTML =
-      '<span class="card__category">' +
-      escapeHtml(project.category) +
-      '</span><span class="card__title">' +
-      escapeHtml(project.title) +
-      "</span>";
+      '<span class="card__title">' + escapeHtml(project.title) + "</span>";
     media.appendChild(caption);
 
     a.appendChild(media);
+
+    const org = document.createElement("span");
+    org.className = "card__org";
+    org.textContent = project.category;
+    a.appendChild(org);
+
     return a;
   }
 
-  // Compact card for horizontal-scroll rails (e.g. "More projects"): image
-  // on top, plain caption below instead of a hover overlay.
+  // Compact card for horizontal-scroll rails (e.g. "More projects"). Same
+  // treatment as the grid card: hover-revealed title, organization below.
   function buildRailCard(project) {
     const a = document.createElement("a");
     a.className = "rail-card";
     a.href = "project.html?slug=" + encodeURIComponent(project.slug);
+
+    const media = document.createElement("div");
+    media.className = "rail-card__media";
 
     const img = document.createElement("img");
     img.className = "rail-card__img";
     img.src = project.thumbnail;
     img.alt = project.category + " — " + project.title;
     img.loading = "lazy";
-    a.appendChild(img);
+    media.appendChild(img);
 
     const caption = document.createElement("div");
     caption.className = "rail-card__caption";
     caption.innerHTML =
-      '<span class="rail-card__title">' +
-      escapeHtml(project.title) +
-      '</span><span class="rail-card__category">' +
-      escapeHtml(project.category) +
-      "</span>";
-    a.appendChild(caption);
+      '<span class="rail-card__title">' + escapeHtml(project.title) + "</span>";
+    media.appendChild(caption);
+
+    a.appendChild(media);
+
+    const org = document.createElement("span");
+    org.className = "rail-card__org";
+    org.textContent = project.category;
+    a.appendChild(org);
 
     return a;
   }
