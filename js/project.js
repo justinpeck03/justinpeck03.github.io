@@ -44,7 +44,7 @@
       '<p class="project__eyebrow">' +
       esc(p.category) +
       '</p><h1 class="project__title">' +
-      esc(p.title) +
+      Portfolio.titleHtml(p) +
       "</h1>";
     root.appendChild(header);
 

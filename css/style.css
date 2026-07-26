@@ -136,7 +136,7 @@ a {
 
 /* Grouped project categories, each a horizontal-scroll rail of cards */
 .cat {
-  margin-top: 60px;
+  margin-top: 36px;
 }
 .cat:first-child {
   margin-top: 0;
@@ -146,7 +146,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 .cat__title {
   margin: 0;
@@ -164,7 +164,7 @@ a {
   gap: 20px;
   overflow-x: auto;
   /* vertical room so the hover grow / shadow isn't clipped by overflow */
-  padding: 14px 2px 28px;
+  padding: 10px 2px 20px;
   scrollbar-width: none;
 }
 .cat__rail::-webkit-scrollbar {
@@ -232,6 +232,13 @@ a {
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: -0.01em;
+}
+
+.title-logo {
+  width: 0.82em;
+  height: 0.82em;
+  margin-right: 0.18em;
+  vertical-align: -0.06em;
 }
 
 /* hover / focus reveal */
@@ -1070,7 +1077,7 @@ a {
   }
   /* Phone: ~2 cards across with a peek */
   .cat {
-    margin-top: 44px;
+    margin-top: 28px;
   }
   .cat__title {
     font-size: 1.3rem;

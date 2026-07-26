@@ -10,7 +10,7 @@
       "slugs": [
         "sram-rockshox-rear-shock",
         "sram-front-derailleur",
-        "apple-watch-ultra-2-and-series-10",
+        "apple-watch-ultra-2-and-series-10",
         "calfee-design-full-suspension-mountain-bike"
       ]
     },
@@ -585,7 +585,7 @@
     },
     {
       "slug": "uc-berkeley-meche-103-experimentation-and-measurements",
-      "category": "Experimentation and Measurements",
+      "category": "Experimentation & Measurements",
       "title": "Wind Tunnel Drag Testing",
       "thumbnail": "assets/images/engineering/uc-berkeley-meche-103-experimentation-and-measurements/01.jpg",
       "paragraphs": [
