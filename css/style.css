@@ -234,13 +234,6 @@ a {
   letter-spacing: -0.01em;
 }
 
-.title-logo {
-  width: 0.82em;
-  height: 0.82em;
-  margin-right: 0.18em;
-  vertical-align: -0.06em;
-}
-
 /* hover / focus reveal */
 .card:hover .card__media,
 .card:focus-visible .card__media {

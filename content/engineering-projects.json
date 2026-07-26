@@ -10,7 +10,7 @@
       "slugs": [
         "sram-rockshox-rear-shock",
         "sram-front-derailleur",
-        "apple-watch-ultra-2-and-series-10",
+        "apple-watch-ultra-2-and-series-10",
         "calfee-design-full-suspension-mountain-bike"
       ]
     },
@@ -187,14 +187,14 @@
     {
       "slug": "apple-watch-ultra-2-and-series-10",
       "category": "Apple",
-      "title": "Watch",
+      "title": "Watch",
       "thumbnail": "assets/images/engineering/apple-watch-ultra-2-and-series-10/01.jpg",
       "paragraphs": [
         "As a product design intern at Apple, I worked on several projects including parts within the Ultra 2 and Series 10. I designed a module-level assembly of 16 parts and determined the datum structure and tolerance analysis for CNC, die-cut, and IM components. A challenge of this project was water resistance at 5 bar, so I designed a custom o-ring seal and gland optimized for stretch, compression, and gland fill at MMC and LMC conditions.",
-        "I also worked on spring-loaded mechanisms for future architecture, and created CNC prototypes for user experience testing. One project involved a flexible printed circuit board, and I released an IDX to collaborate with the EE layout team. Finally, I was directly responsible for a foam part that was released in the Apple Watch Series 10."
+        "I also worked on spring-loaded mechanisms for future architecture, and created CNC prototypes for user experience testing. One project involved a flexible printed circuit board, and I released an IDX to collaborate with the EE layout team. Finally, I was directly responsible for a foam part that was released in the Watch Series 10."
       ],
       "highlights": [
-        "Watch Series 10",
+        "Watch Series 10",
         "Series 10 Teardown: iFixit",
         "Ultra 2 Housing: iFixit"
       ],
