@@ -1,16 +1,107 @@
 {
   "name": "Justin Peck",
   "contact": "justinpeck@berkeley.edu | (203) 448-8268 | www.linkedin.com/in/peck-justin",
-  "summary": "Master\u2019s student in Mechanical Engineering and Engineering Management at CU Boulder, with experience in product design and manufacturing. Seeking an internship in Winter-Spring 2027 in mechanical engineering product design.",
+  "summary": "Master’s student in Mechanical Engineering and Engineering Management at CU Boulder, with experience in product design and manufacturing. Seeking an internship in Winter-Spring 2027 in mechanical engineering product design.",
   "about": {
     "headline": "About Me",
     "photo": "assets/images/about/portrait.jpg",
     "bio": [
-      "I\u2019m a 23 year-old product design engineer from Los Gatos, California. I graduated from UC Berkeley, and am now attending CU Boulder for my Masters in Mechanical Engineering and Engineering Management.",
+      "I’m a 23 year-old product design engineer from Los Gatos, California. I graduated from UC Berkeley, and am now attending CU Boulder for my Masters in Mechanical Engineering and Engineering Management.",
       "I am passionate about Product Design and have recently completed Design Engineering internships at SRAM/Rockshox and Apple. I am interested in pursuing a career in tech or the bike industry.",
       "Aside from engineering, I enjoy spending my time in the outdoors skiing, surfing, and cycling. I compete in professional level cross country mountain bike races around the world."
     ]
   },
+  "timeline": [
+    {
+      "kind": "education",
+      "logo": "assets/images/about/cuengineering_logo.jpeg",
+      "date": "Expected May 2028",
+      "title": "University of Colorado Boulder",
+      "org": "Master of Science (MS) Mechanical Engineering | (MS) Engineering Management",
+      "bullets": [
+        "Relevant Coursework: Advanced Product Design, Design for Manufacturing, Engineering Communication"
+      ]
+    },
+    {
+      "kind": "experience",
+      "logo": "assets/images/about/rockshox-logo-png-transparent.png",
+      "date": "January – May 2026",
+      "title": "Rear Shock Design Engineering Intern",
+      "org": "SRAM / RockShox · Colorado Springs, CO",
+      "bullets": [
+        "Designed, prototyped, and tested several injection molded parts for future production rear shock airspring",
+        "Completed concept CAD and ran MATLAB simulations for adjustable compression/rebound hydraulic damper"
+      ]
+    },
+    {
+      "kind": "education",
+      "logo": "assets/images/about/Cal_logo.png",
+      "date": "2021 – December 2025",
+      "title": "University of California, Berkeley",
+      "org": "Bachelor of Science (BS) Mechanical Engineering | GPA: 3.88",
+      "bullets": [
+        "Relevant Coursework: Solid Mechanics, Materials Science, Statistics and Data Science, Composites, Linkages, Dynamics, Heat Transfer, Fluid Dynamics, Electrical Engineering, Dynamic System and Feedback, Manufacturing and Design Communication, Multivariable Calculus, Linear Algebra and Differential Equations, Mechatronics Design"
+      ]
+    },
+    {
+      "kind": "experience",
+      "logo": "assets/images/about/sram_llc_logo.jpeg",
+      "date": "May – August 2025",
+      "title": "Front Derailleur Design Engineering Intern",
+      "org": "SRAM · Colorado Springs, CO",
+      "bullets": [
+        "Developed prototypes, molds, and fixtures using FEA optimization, generative design, and drawings in Creo",
+        "Redesigned production link for injection molding, achieving 51% lighter, 44% stiffer, and 10x less expensive part"
+      ]
+    },
+    {
+      "kind": "experience",
+      "logo": "assets/images/about/apple_logo.jpeg",
+      "date": "January – August 2024",
+      "title": "Watch Product Design Intern",
+      "org": "Apple · Cupertino, CA",
+      "bullets": [
+        "Module-level design with assembly of 16 parts, determined datum structures and performed tolerance analysis to ensure proper fit and function across part distributions. DFM for CNC, die-cut, and IM components",
+        "Designed o-ring seal for optimal compression, stretch, and gland fill at MMC and LMC part tolerance conditions",
+        "PD for flexible printed circuit board, worked with EE and layout teams to define PCB outline, released IDX file",
+        "DRI for component in Watch Series 10, worked with vendors and completed Rev A drawing release process",
+        "Design of spring-loaded mechanisms for future architecture, kicked off CNC prototypes for user experience"
+      ]
+    },
+    {
+      "kind": "experience",
+      "logo": "assets/images/about/calfee_design_logo.jpeg",
+      "date": "May – August 2023",
+      "title": "Mechanical Engineering Intern",
+      "org": "Calfee Design · Santa Cruz, CA",
+      "bullets": [
+        "Internship project focused on the design of a carbon fiber full suspension mountain bike in 2D and 3D CAD",
+        "Hands on manufacturing experience, programmed and ran CNC mill to create molds for carbon fiber components"
+      ]
+    },
+    {
+      "kind": "experience",
+      "logo": "assets/images/about/b3_logo.png",
+      "date": "August 2021 – December 2025",
+      "title": "Frame Team Lead",
+      "org": "Bike Builders of Berkeley · Engineering Club at UC Berkeley",
+      "bullets": [
+        "Led team of undergrads to design printed aluminum lugs for lugged carbon fiber downhill bike project",
+        "Created custom linkage design and machined components for steel full suspension mountain bike",
+        "Designed parametric welding and tube mitering jigs to fabricate custom geometry steel frames"
+      ]
+    },
+    {
+      "kind": "education",
+      "logo": "assets/images/about/los_gatos_high_school_2_logo.jpeg",
+      "date": "2017 – 2021",
+      "title": "Los Gatos High School",
+      "org": "Los Gatos, California",
+      "bullets": [
+        "LEAD Program | GPA 4.33 | Excellence in STEM Award, Varsity Cross Country, Sparkle On Scholarship"
+      ]
+    }
+  ],
   "connect": {
     "email": "justinpeck03@gmail.com",
     "linkedin": "https://www.linkedin.com/in/peck-justin/"
@@ -18,134 +109,5 @@
   "resume": {
     "pdf": "assets/resume/Justin-Peck-Resume.pdf",
     "preview": "assets/resume/resume-preview.png"
-  },
-  "education": [
-    {
-      "school": "University of Colorado Boulder",
-      "dates": "Expected [May 2028]",
-      "details": [
-        "Master of Science (MS) Mechanical Engineering | (MS) Engineering Management",
-        "Relevant Coursework: Advanced Product Design, Design for Manufacturing, Engineering Communication"
-      ]
-    },
-    {
-      "school": "University of California Berkeley",
-      "dates": "2021- December 2025",
-      "details": [
-        "Bachelor of Science (BS) Mechanical Engineering | GPA: 3.88",
-        "Relevant Coursework: Solid Mechanics, Materials Science, Statistics and Data Science, Composites, Linkages, Dynamics, Heat Transfer, Fluid Dynamics, Electrical Engineering, Dynamic System and Feedback, Manufacturing and Design Communication, Multivariable Calculus, Linear Algebra and Differential Equations, Mechatronics Design"
-      ]
-    },
-    {
-      "school": "Los Gatos High School, California",
-      "dates": "2017-2021",
-      "details": [
-        "LEAD Program | GPA 4.33 | Excellence in STEM Award, Varsity Cross Country, Sparkle On Scholarship"
-      ]
-    }
-  ],
-  "skills": {
-    "Design & Analysis": [
-      "SolidWorks",
-      "Siemens NX",
-      "PTC Creo",
-      "Autodesk Fusion 360",
-      "AutoCAD",
-      "Ansys FEA"
-    ],
-    "Manufacturing": [
-      "Lathe",
-      "Mill",
-      "TIG Welding",
-      "CNC",
-      "Additive",
-      "Composite Layups",
-      "Laser Cutting",
-      "Injection Molding"
-    ],
-    "Programming": [
-      "MATLAB",
-      "Mathematica",
-      "JavaScript",
-      "Python",
-      "ESP32",
-      "Arduino",
-      "JMP",
-      "Claude AI"
-    ]
-  },
-  "experience": [
-    {
-      "company": "SRAM",
-      "location": "Colorado Springs, CO",
-      "roles": [
-        {
-          "title": "Rear Shock Design Engineering Intern",
-          "dates": "January - May 2026",
-          "bullets": [
-            "Designed, prototyped, and tested several injection molded parts for future production rear shock airspring",
-            "Completed concept CAD and ran MATLAB simulations for adjustable compression/rebound hydraulic damper"
-          ]
-        },
-        {
-          "title": "Front Derailleur Design Engineering Intern",
-          "dates": "May - August 2025",
-          "bullets": [
-            "Developed prototypes, molds, and fixtures using FEA optimization, generative design, and drawings in Creo",
-            "Redesigned production link for injection molding, achieving 51% lighter, 44% stiffer, and 10x less expensive part"
-          ]
-        }
-      ]
-    },
-    {
-      "company": "Apple",
-      "location": "Cupertino, CA",
-      "roles": [
-        {
-          "title": "Watch Product Design Intern",
-          "dates": "January - August 2024",
-          "bullets": [
-            "Module-level design with assembly of 16 parts, determined datum structures and performed tolerance analysis to ensure proper fit and function across part distributions. DFM for CNC, die-cut, and IM components",
-            "Designed o-ring seal for optimal compression, stretch, and gland fill at MMC and LMC part tolerance conditions",
-            "PD for flexible printed circuit board, worked with EE and layout teams to define PCB outline, released IDX file",
-            "DRI for component in Watch Series 10, worked with vendors and completed Rev A drawing release process",
-            "Design of spring-loaded mechanisms for future architecture, kicked off CNC prototypes for user experience"
-          ]
-        }
-      ]
-    },
-    {
-      "company": "Calfee Design",
-      "location": "Santa Cruz, CA",
-      "roles": [
-        {
-          "title": "Mechanical Engineering Intern",
-          "dates": "May - August 2023",
-          "bullets": [
-            "Internship project focused on the design of a carbon fiber full suspension mountain bike in 2D and 3D CAD",
-            "Hands on manufacturing experience, programmed and ran CNC mill to create molds for carbon fiber components"
-          ]
-        }
-      ]
-    },
-    {
-      "company": "Bike Builders of Berkeley",
-      "location": "Engineering Club at UC Berkeley",
-      "roles": [
-        {
-          "title": "Frame Team Lead",
-          "dates": "August 2021 - December 2025",
-          "bullets": [
-            "Led team of undergrads to design printed aluminum lugs for lugged carbon fiber downhill bike project",
-            "Created custom linkage design and machined components for steel full suspension mountain bike",
-            "Designed parametric welding and tube mitering jigs to fabricate custom geometry steel frames"
-          ]
-        }
-      ]
-    }
-  ],
-  "background_and_interests": {
-    "Cycling": "2024 & 2025 collegiate mountain bike National Champion, former President of Cal Cycling team",
-    "Scouting": "Eagle Scout from Troop 2 Los Gatos. Eagle Scout project is a trailhead signboard at Soquel Demonstration State Forest. Multiple leadership positions over 10 years including Senior Patrol Leader in a troop of 40 active scouts"
   }
 }

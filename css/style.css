@@ -582,88 +582,169 @@ a {
   max-width: 720px;
 }
 
-/* Shared entry (education / experience / interests) */
-.entry {
-  margin-bottom: 44px;
-}
-.entry:last-child {
-  margin-bottom: 0;
-}
-
-.entry__head {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 8px 20px;
+/* ---------- Timeline (About page) ----------
+   Centre rail with a logo marker per entry; cards alternate sides on desktop
+   and collapse to a single left-rail column on narrow screens. */
+.timeline {
+  padding: 64px 0 24px;
+  border-top: 0.5px solid var(--hairline);
+  /* the reveal transform slides items in from the side — clip it so it can
+     never widen the page (clip, not hidden: no new scroll container) */
+  overflow-x: clip;
 }
 
-.entry h3 {
-  margin: 0;
-  font-size: 1.3rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-}
-
-.entry__dates {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  white-space: nowrap;
-}
-
-.entry__detail {
-  margin: 8px 0 0;
-  color: var(--text-secondary);
-  font-size: 1rem;
-  line-height: 1.55;
-}
-
-/* Experience roles nested under a company */
-.role {
-  margin-top: 22px;
-}
-.role h4 {
-  margin: 0;
-  font-size: 1.05rem;
-  font-weight: 600;
-}
-.role ul {
-  margin: 12px 0 0;
-  padding-left: 20px;
-}
-.role li {
-  margin-bottom: 8px;
-  color: #45454c;
-  font-size: 1rem;
-  line-height: 1.55;
-}
-
-/* Skills */
-.skills-group {
-  margin-bottom: 32px;
-}
-.skills-group:last-child {
-  margin-bottom: 0;
-}
-.skills-group h4 {
-  margin: 0 0 14px;
-  font-size: 1.05rem;
-  font-weight: 600;
-}
-.pills {
+.tl {
+  position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
 }
-.pills li {
-  padding: 7px 15px;
-  background: var(--card-bg);
-  border-radius: 999px;
+
+/* The rail itself, plus a fill that tracks scroll progress */
+.tl__line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--border);
+  border-radius: 1px;
+}
+.tl__line-fill {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--text-primary);
+  transform: scaleY(0);
+  transform-origin: top;
+  border-radius: 1px;
+}
+
+.tl__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 64px 1fr;
+  align-items: start;
+  column-gap: 28px;
+  padding-bottom: 56px;
+}
+.tl__item:last-child {
+  padding-bottom: 0;
+}
+
+/* Marker sits in the middle column, centred on the rail */
+.tl__marker {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #fff;
+  border: 0.5px solid var(--hairline);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.tl__marker img {
+  width: 74%;
+  height: 74%;
+  object-fit: contain;
+}
+
+/* Alternating sides: card and date swap columns */
+.tl__item--left .tl__card,
+.tl__item--right .tl__date {
+  grid-column: 1;
+  grid-row: 1;
+  text-align: right;
+}
+.tl__item--left .tl__date,
+.tl__item--right .tl__card {
+  grid-column: 3;
+  grid-row: 1;
+  text-align: left;
+}
+
+/* On right-aligned cards the list shrink-wraps so it sits against the rail,
+   while the bullet text itself stays left-aligned and readable. */
+.tl__item--left .tl__bullets {
+  display: inline-block;
+  max-width: 100%;
+  text-align: left;
+}
+
+.tl__date {
+  margin: 0;
+  padding-top: 14px;
   color: var(--text-secondary);
   font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.tl__card {
+  padding-top: 6px;
+}
+
+.tl__title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.tl__org {
+  margin: 6px 0 0;
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.tl__bullets {
+  margin: 14px 0 0;
+  padding-left: 20px;
+}
+.tl__bullets li {
+  margin-bottom: 8px;
+  color: #45454c;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+.tl__bullets li:last-child {
+  margin-bottom: 0;
+}
+
+/* Scroll reveal: entries slide in from their own side */
+.tl__item {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+}
+.tl__item--left {
+  transform: translate(-28px, 24px);
+}
+.tl__item--right {
+  transform: translate(28px, 24px);
+}
+.tl__item.is-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tl__item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .tl__line-fill {
+    display: none;
+  }
 }
 
 /* Resume section (About page) */
@@ -1045,6 +1126,45 @@ a {
     grid-template-columns: 150px 1fr;
     gap: 32px;
   }
+  /* Tablet and below: rail moves to the left, everything stacks beside it.
+     `left` matches half the marker column so the two stay concentric. */
+  .tl__line {
+    left: 28px;
+  }
+  .tl__item {
+    grid-template-columns: 56px 1fr;
+    column-gap: 20px;
+    padding-bottom: 44px;
+  }
+  .tl__marker {
+    grid-column: 1;
+    grid-row: 1;
+    width: 56px;
+    height: 56px;
+  }
+  .tl__item--left .tl__card,
+  .tl__item--right .tl__card,
+  .tl__item--left .tl__date,
+  .tl__item--right .tl__date {
+    grid-column: 2;
+    text-align: left;
+  }
+  .tl__item--left .tl__date,
+  .tl__item--right .tl__date {
+    grid-row: 1;
+    padding-top: 4px;
+  }
+  .tl__item--left .tl__card,
+  .tl__item--right .tl__card {
+    grid-row: 2;
+    padding-top: 8px;
+  }
+  /* Rail is left-aligned here, so reveal vertically only — a sideways slide
+     would push against the viewport edge on narrow screens */
+  .tl__item--left,
+  .tl__item--right {
+    transform: translateY(20px);
+  }
   .cy-highlights {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1151,6 +1271,29 @@ a {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 44px 0;
+  }
+  /* Phone: tighter rail and smaller markers */
+  .timeline {
+    padding: 44px 0 16px;
+  }
+  .tl__line {
+    left: 21px;
+  }
+  .tl__item {
+    grid-template-columns: 42px 1fr;
+    column-gap: 16px;
+    padding-bottom: 36px;
+  }
+  .tl__marker {
+    width: 42px;
+    height: 42px;
+  }
+  .tl__title {
+    font-size: 1.1rem;
+  }
+  .tl__org,
+  .tl__bullets li {
+    font-size: 0.93rem;
   }
   .contact {
     padding: 64px 18px 32px;
