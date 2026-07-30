@@ -15,9 +15,9 @@
     {
       "kind": "education",
       "logo": "assets/images/about/cuengineering_logo.jpeg",
-      "date": "Expected May 2028",
+      "date": "August 2026 - May 2028",
       "title": "University of Colorado Boulder",
-      "org": "Master of Science (MS) Mechanical Engineering | (MS) Engineering Management",
+      "org": "Master of Science (MS) Mechanical Engineering · Master of Science (MS) Engineering Management",
       "bullets": [
         "Relevant Coursework: Advanced Product Design, Design for Manufacturing, Engineering Communication"
       ]
@@ -36,10 +36,11 @@
     {
       "kind": "education",
       "logo": "assets/images/about/Cal_logo.png",
-      "date": "2021 – December 2025",
+      "date": "August 2021 – December 2025",
       "title": "University of California, Berkeley",
-      "org": "Bachelor of Science (BS) Mechanical Engineering | GPA: 3.88",
+      "org": "Bachelor of Science (BS) Mechanical Engineering",
       "bullets": [
+        "GPA: 3.88",
         "Relevant Coursework: Solid Mechanics, Materials Science, Statistics and Data Science, Composites, Linkages, Dynamics, Heat Transfer, Fluid Dynamics, Electrical Engineering, Dynamic System and Feedback, Manufacturing and Design Communication, Multivariable Calculus, Linear Algebra and Differential Equations, Mechatronics Design"
       ]
     },
@@ -58,13 +59,13 @@
       "kind": "experience",
       "logo": "assets/images/about/apple_logo.jpeg",
       "date": "January – August 2024",
-      "title": "Watch Product Design Intern",
+      "title": "Watch Product Design Intern",
       "org": "Apple · Cupertino, CA",
       "bullets": [
         "Module-level design with assembly of 16 parts, determined datum structures and performed tolerance analysis to ensure proper fit and function across part distributions. DFM for CNC, die-cut, and IM components",
         "Designed o-ring seal for optimal compression, stretch, and gland fill at MMC and LMC part tolerance conditions",
         "PD for flexible printed circuit board, worked with EE and layout teams to define PCB outline, released IDX file",
-        "DRI for component in Watch Series 10, worked with vendors and completed Rev A drawing release process",
+        "DRI for component in Watch Series 10, worked with vendors and completed Rev A drawing release process",
         "Design of spring-loaded mechanisms for future architecture, kicked off CNC prototypes for user experience"
       ]
     },
@@ -92,13 +93,36 @@
       ]
     },
     {
+      "kind": "experience",
+      "logo": "assets/images/about/hpv.png",
+      "date": "August 2021 – May 2023",
+      "title": "Drivetrain Lead",
+      "org": "Human Powered Vehicle Team · Engineering Club at UC Berkeley",
+      "bullets": [
+        "Conceptualized prone-position aerodynamic bicycle through CAD and physical models",
+        "Designed original drivetrain in SolidWorks, including existing components and several custom parts"
+      ]
+    },
+    {
       "kind": "education",
       "logo": "assets/images/about/los_gatos_high_school_2_logo.jpeg",
       "date": "2017 – 2021",
       "title": "Los Gatos High School",
-      "org": "Los Gatos, California",
+      "org": "LEAD Program · Los Gatos, California",
       "bullets": [
-        "LEAD Program | GPA 4.33 | Excellence in STEM Award, Varsity Cross Country, Sparkle On Scholarship"
+        "GPA 4.33",
+        "Excellence in STEM Award, Varsity Cross Country, Sparkle On Scholarship"
+      ]
+    },
+    {
+      "kind": "experience",
+      "logo": "assets/images/about/bsa.jpeg",
+      "date": "2012 – 2021",
+      "title": "Eagle Scout",
+      "org": "Troop 2 · Boy Scouts of America",
+      "bullets": [
+        "Organized and built a trailhead signboard at Soquel Demonstration State Forest for Eagle Scout project",
+        "Multiple leadership positions over 10 years including Troop Guide, Senior Patrol Leader, and Junior Assistant Scoutmaster in a troop of 40 active scouts"
       ]
     }
   ],
