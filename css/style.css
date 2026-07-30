@@ -1111,6 +1111,9 @@ a {
   padding: 4px 0 8px;
 }
 .pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   padding: 12px 22px;
   border: 0.5px solid var(--border);
   border-radius: 999px;
@@ -1118,6 +1121,14 @@ a {
   font-size: 0.95rem;
   font-weight: 500;
   transition: background 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+/* Optional site logo sitting to the left of the button label */
+.pill-link__logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex: none;
 }
 .pill-link:hover {
   background: var(--card-bg);

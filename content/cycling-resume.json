@@ -39,49 +39,40 @@
   ],
   "top_results": [
     {
+      "placing": "9th",
+      "race": "2026 US MTB Nationals Elite XCO"
+    },
+    {
       "placing": "1st",
-      "race": "2026 Stetina’s Paydirt Gravel",
-      "category": "Pro Men"
+      "race": "2026 Stetina’s Paydirt Gravel"
     },
     {
       "placing": "5th",
-      "race": "2026 BC Bike Stage Race",
-      "category": "Pro Men"
+      "race": "2026 BC Bike Stage Race"
     },
     {
       "placing": "1st",
-      "race": "2025 Collegiate MTB XCO & Omnium",
-      "category": "Club Men"
+      "race": "2025 Collegiate MTB XCO & Omnium"
     },
     {
       "placing": "4th",
-      "race": "2025 Lifetime Sea Otter Gravel",
-      "category": "U23 Men"
+      "race": "2025 U23 Lifetime Sea Otter Gravel"
     },
     {
       "placing": "2nd",
-      "race": "2025 Missoula XCO",
-      "category": "UCI U23 Men"
+      "race": "2025 Missoula U23 UCI XCO"
     },
     {
       "placing": "7th",
-      "race": "2025 U23 Lifetime Gran Prix Overall",
-      "category": "U23 Men"
-    },
-    {
-      "placing": "7th",
-      "race": "2024 US MTB Nationals XCO",
-      "category": "UCI U23 Men"
+      "race": "2025 U23 Lifetime Grand Prix Overall"
     },
     {
       "placing": "1st",
-      "race": "2024 Collegiate MTB Nationals XCO",
-      "category": "Club Men"
+      "race": "2024 Collegiate MTB Nationals XCO"
     },
     {
       "placing": "1st",
-      "race": "2024 Collegiate Cyclocross Nationals",
-      "category": "Club Men"
+      "race": "2024 Collegiate Cyclocross Nationals"
     }
   ],
   "schedule": {
@@ -284,10 +275,40 @@
         "date": "May 23-29"
       },
       {
-        "placing": "68",
-        "race": "UCI MTB World Cup Leogang XCO",
+        "placing": "67",
+        "race": "Leogang World Cup XCO",
         "category": "UCI Elite Men",
         "date": "June 14"
+      },
+      {
+        "placing": "88",
+        "race": "Lenzerheide World Cup XCO",
+        "category": "UCI Elite Men",
+        "date": "June 21"
+      },
+      {
+        "placing": "78",
+        "race": "La Thuile World Cup XCO",
+        "category": "UCI Elite Men",
+        "date": "July 5"
+      },
+      {
+        "placing": "60",
+        "race": "Andorra World Cup XCO",
+        "category": "UCI Elite Men",
+        "date": "July 12"
+      },
+      {
+        "placing": "16",
+        "race": "US MTB National Championships XCC",
+        "category": "UCI Elite Men",
+        "date": "July 16"
+      },
+      {
+        "placing": "9",
+        "race": "US MTB National Championships XCO",
+        "category": "UCI Elite Men",
+        "date": "July 18"
       }
     ],
     "2025": [
@@ -1480,12 +1501,14 @@
   ],
   "external_links": [
     {
-      "label": "MTB Data",
-      "url": "https://mtbdata.com/riders/justin-peck"
+      "label": "My MTB Data",
+      "url": "https://mtbdata.com/riders/justin-peck",
+      "logo": "assets/images/cycling/mtbdata.png"
     },
     {
       "label": "UCI Individual Ranking",
-      "url": "https://www.uci.org/discipline/mountain-bike/4LArSj7CKcytMrGEDtKwkb?tab=rankings"
+      "url": "https://www.uci.org/discipline/mountain-bike/4LArSj7CKcytMrGEDtKwkb?tab=rankings",
+      "logo": "assets/images/cycling/uci.png"
     }
   ]
 }

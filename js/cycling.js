@@ -218,6 +218,11 @@
           '<a class="pill-link" href="' +
           esc(l.url) +
           '" target="_blank" rel="noopener">' +
+          (l.logo
+            ? '<img class="pill-link__logo" src="' +
+              esc(l.logo) +
+              '" alt="" loading="lazy" />'
+            : "") +
           esc(l.label) +
           " &rarr;</a>"
       )
