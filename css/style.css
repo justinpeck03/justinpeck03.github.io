@@ -1049,33 +1049,7 @@ a {
 }
 
 /* 5. Team */
-.team-card {
-  display: inline-flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 28px;
-  border: 0.5px solid var(--border);
-  border-radius: 16px;
-  transition: border-color 0.2s var(--ease), background 0.2s var(--ease);
-}
-.team-card:hover {
-  border-color: var(--text-muted);
-  background: var(--card-bg);
-}
-.team-card__logo {
-  width: 56px;
-  height: 56px;
-  object-fit: contain;
-  border-radius: 8px;
-}
-.team-card__name {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  letter-spacing: -0.01em;
-}
-
-/* 6. Sponsors */
+/* Team + sponsor logos (combined row) */
 .sponsors {
   display: flex;
   flex-wrap: wrap;
@@ -1123,11 +1097,12 @@ a {
   transition: background 0.2s var(--ease), border-color 0.2s var(--ease);
 }
 
-/* Optional site logo sitting to the left of the button label */
+/* Optional wordmark sitting to the left of the button label. These are wide
+   lockups, so height is set per logo (from the JSON) and width follows the
+   aspect ratio — a fixed square box would shrink them to a few pixels tall. */
 .pill-link__logo {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
+  width: auto;
+  height: 13px;
   flex: none;
 }
 .pill-link:hover {

@@ -4,7 +4,7 @@
   "license": "UCI Elite (02/15/2003)",
   "instagram": "https://www.instagram.com/justin__peck/",
   "bio_photos": [
-    "assets/images/cycling/photo-1.png",
+    "assets/images/cycling/photo-1.jpg",
     "assets/images/cycling/photo-3.jpeg"
   ],
   "team": {
@@ -1511,12 +1511,14 @@
     {
       "label": "My MTB Data",
       "url": "https://mtbdata.com/riders/justin-peck",
-      "logo": "assets/images/cycling/mtbdata.png"
+      "logo": "assets/images/cycling/mtbdata.png",
+      "logoHeight": 13
     },
     {
       "label": "UCI Individual Ranking",
       "url": "https://www.uci.org/discipline/mountain-bike/4LArSj7CKcytMrGEDtKwkb?tab=rankings",
-      "logo": "assets/images/cycling/uci.png"
+      "logo": "assets/images/cycling/uci.png",
+      "logoHeight": 11
     }
   ]
 }

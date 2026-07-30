@@ -1,6 +1,6 @@
 // Builds the single-page Cycling page from content/cycling-resume.json:
 // bio + photos, career highlights next to an Instagram grid, results by season
-// (collapsible) with result links, 2026 schedule, team, sponsors, connect.
+// (collapsible) with result links, 2026 schedule, and team + sponsor logos.
 (function () {
   const root = document.getElementById("cycling-root");
   if (!root) return;
@@ -53,8 +53,7 @@
       seasons(d.results_by_season),
       externalLinks(d.external_links),
       schedule(d.schedule),
-      team(d.team),
-      sponsors(d.sponsors),
+      supporters(d.team, d.sponsors),
     ].join("\n");
   }
 
@@ -221,7 +220,9 @@
           (l.logo
             ? '<img class="pill-link__logo" src="' +
               esc(l.logo) +
-              '" alt="" loading="lazy" />'
+              '" alt=""' +
+              (l.logoHeight ? ' style="height:' + Number(l.logoHeight) + 'px"' : "") +
+              ' loading="lazy" />'
             : "") +
           esc(l.label) +
           " &rarr;</a>"
@@ -230,34 +231,11 @@
     return '<div class="cy-links">' + buttons + "</div>";
   }
 
-  // 5. Team
-  function team(t) {
-    if (!t) return "";
-    return (
-      '<section class="cy-section">' +
-      '<h2 class="cy-section__label">Team</h2>' +
-      '<a class="team-card" href="' +
-      esc(t.url) +
-      '" target="_blank" rel="noopener">' +
-      (t.logo
-        ? '<img class="team-card__logo" src="' +
-          esc(t.logo) +
-          '" alt="' +
-          esc(t.name) +
-          ' logo" loading="lazy" />'
-        : "") +
-      '<span class="team-card__name">' +
-      esc(t.name) +
-      "</span>" +
-      "</a>" +
-      "</section>"
-    );
-  }
-
-  // 6. Sponsors
-  function sponsors(list) {
-    if (!list || !list.length) return "";
-    const items = list
+  // 5. Team + sponsors as one combined logo row
+  function supporters(t, list) {
+    const all = (t ? [t] : []).concat(list || []);
+    if (!all.length) return "";
+    const items = all
       .map(
         (s) =>
           '<a class="sponsor" href="' +
@@ -275,7 +253,9 @@
       .join("");
     return (
       '<section class="cy-section">' +
-      '<h2 class="cy-section__label">Sponsors</h2>' +
+      '<h2 class="cy-section__label">' +
+      "Thank you to my team and sponsors who make this possible!" +
+      "</h2>" +
       '<div class="sponsors">' +
       items +
       "</div>" +
