@@ -1,6 +1,6 @@
 // Builds the single-page Cycling page from content/cycling-resume.json:
-// bio + photos, career highlights next to an Instagram grid, 2026 schedule,
-// results by season (collapsible) with result links, team, sponsors, connect.
+// bio + photos, career highlights next to an Instagram grid, results by season
+// (collapsible) with result links, 2026 schedule, team, sponsors, connect.
 (function () {
   const root = document.getElementById("cycling-root");
   if (!root) return;
@@ -50,9 +50,9 @@
     root.innerHTML = [
       bio(d),
       highlights(d.top_results, d.instagram_grid, d.instagram),
-      schedule(d.schedule),
       seasons(d.results_by_season),
       externalLinks(d.external_links),
+      schedule(d.schedule),
       team(d.team),
       sponsors(d.sponsors),
     ].join("\n");
@@ -129,7 +129,7 @@
     );
   }
 
-  // 3. 2026 schedule
+  // 4. 2026 schedule
   function schedule(sched) {
     if (!sched) return "";
     const rows = (sched.events || [])
@@ -167,7 +167,7 @@
     );
   }
 
-  // 4. Results by season (collapsible): placing / race / date, with ordinals
+  // 3. Results by season (collapsible): placing / race / date, with ordinals
   function seasons(bySeason) {
     if (!bySeason) return "";
     const years = Object.keys(bySeason).sort((a, b) => b.localeCompare(a));

@@ -169,8 +169,16 @@
         "location": "Downieville, California"
       },
       {
-        "month": "September - December",
-        "note": "Collegiate MTB & Cyclocross Calendar TBD"
+        "month": "September",
+        "dates": "20",
+        "event": "Soldier Hollow UCI World Cup XCO",
+        "location": "Midway, Utah"
+      },
+      {
+        "month": "October",
+        "dates": "4",
+        "event": "Lake Placid UCI World Cup XCO",
+        "location": "Lake Placid, New York"
       }
     ]
   },
