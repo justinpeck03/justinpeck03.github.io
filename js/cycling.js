@@ -55,6 +55,12 @@
       schedule(d.schedule),
       supporters(d.team, d.sponsors),
     ].join("\n");
+
+    // Per-logo heights are applied here rather than as inline style attributes
+    // so the page can ship a strict style-src CSP (no 'unsafe-inline').
+    root.querySelectorAll(".pill-link__logo[data-h]").forEach(function (img) {
+      img.style.height = img.dataset.h + "px";
+    });
   }
 
   // 1. Bio with two photos on the side; DOB / hometown / based-in at the bottom
@@ -221,7 +227,7 @@
             ? '<img class="pill-link__logo" src="' +
               esc(l.logo) +
               '" alt=""' +
-              (l.logoHeight ? ' style="height:' + Number(l.logoHeight) + 'px"' : "") +
+              (l.logoHeight ? ' data-h="' + Number(l.logoHeight) + '"' : "") +
               ' loading="lazy" />'
             : "") +
           esc(l.label) +
