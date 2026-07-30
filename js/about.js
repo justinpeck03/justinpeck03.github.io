@@ -50,7 +50,9 @@
           '<li class="tl__item ' +
           side +
           '">' +
-          '<div class="tl__marker">' +
+          '<div class="tl__marker' +
+          (item.logoFill ? " tl__marker--fill" : "") +
+          '">' +
           (item.logo
             ? '<img src="' +
               esc(item.logo) +

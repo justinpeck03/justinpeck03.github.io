@@ -655,6 +655,14 @@ a {
   object-fit: contain;
 }
 
+/* Logos whose artwork already reads as a badge fill the bubble edge to edge
+   instead of sitting inset with padding around them. */
+.tl__marker--fill img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Alternating sides: card and date swap columns */
 .tl__item--left .tl__card,
 .tl__item--right .tl__date {

@@ -15,12 +15,13 @@
     {
       "kind": "education",
       "logo": "assets/images/about/cuengineering_logo.jpeg",
-      "date": "August 2026 - May 2028",
+      "date": "August 2026 – May 2028",
       "title": "University of Colorado Boulder",
       "org": "Master of Science (MS) Mechanical Engineering · Master of Science (MS) Engineering Management",
       "bullets": [
         "Relevant Coursework: Advanced Product Design, Design for Manufacturing, Engineering Communication"
-      ]
+      ],
+      "logoFill": true
     },
     {
       "kind": "experience",
@@ -101,7 +102,8 @@
       "bullets": [
         "Conceptualized prone-position aerodynamic bicycle through CAD and physical models",
         "Designed original drivetrain in SolidWorks, including existing components and several custom parts"
-      ]
+      ],
+      "logoFill": true
     },
     {
       "kind": "education",
@@ -112,11 +114,12 @@
       "bullets": [
         "GPA 4.33",
         "Excellence in STEM Award, Varsity Cross Country, Sparkle On Scholarship"
-      ]
+      ],
+      "logoFill": true
     },
     {
       "kind": "experience",
-      "logo": "assets/images/about/bsa.jpeg",
+      "logo": "assets/images/about/bsa.png",
       "date": "2012 – 2021",
       "title": "Eagle Scout",
       "org": "Troop 2 · Boy Scouts of America",
