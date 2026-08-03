@@ -6,6 +6,9 @@
   const mount = document.getElementById("work-grid");
   if (!mount) return;
 
+  // Three category rails, matching what the real content will be
+  mount.innerHTML = Portfolio.skeletonBlocks(3, 4);
+
   Portfolio.loadProjects()
     .then((data) => {
       const projects = data.projects || [];

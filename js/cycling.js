@@ -33,6 +33,18 @@
     return String(date).replace(/\d+/g, (m) => ordinal(m));
   }
 
+  // Placeholder bio + photos while the JSON loads
+  root.innerHTML =
+    '<div class="cy-bio" aria-hidden="true">' +
+    '<div class="cy-bio__text">' +
+    '<div class="skel skel-title"></div>' +
+    '<div class="skel skel-line"></div><div class="skel skel-line"></div>' +
+    '<div class="skel skel-line"></div><div class="skel skel-line"></div>' +
+    "</div>" +
+    '<div class="cy-bio__photos">' +
+    '<div class="skel skel-media"></div><div class="skel skel-media"></div>' +
+    "</div></div>";
+
   fetch("content/cycling-resume.json", { cache: "no-cache" })
     .then((res) => {
       if (!res.ok) throw new Error("HTTP " + res.status);

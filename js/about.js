@@ -12,6 +12,17 @@
       .replace(/>/g, "&gt;");
   }
 
+  // Placeholder intro + photo while the JSON loads
+  root.innerHTML =
+    '<div class="about-intro" aria-hidden="true">' +
+    '<div class="about-intro__text">' +
+    '<div class="skel skel-title"></div>' +
+    '<div class="skel skel-line"></div><div class="skel skel-line"></div>' +
+    '<div class="skel skel-line"></div><div class="skel skel-line"></div>' +
+    "</div>" +
+    '<div class="about-intro__photo"><div class="skel skel-media"></div></div>' +
+    "</div>";
+
   fetch("content/resume.json", { cache: "no-cache" })
     .then((res) => {
       if (!res.ok) throw new Error("HTTP " + res.status);

@@ -1110,10 +1110,68 @@ a {
   border-color: var(--text-muted);
 }
 
+/* ---------- Skeleton loading placeholders ----------
+   Shown while the page's JSON is still in flight, so the layout is visible
+   immediately instead of a blank column. */
+.skel {
+  background: var(--card-bg);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.65) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  animation: skel-shimmer 1.35s ease-in-out infinite;
+}
+@keyframes skel-shimmer {
+  from {
+    background-position: -120% 0;
+  }
+  to {
+    background-position: 220% 0;
+  }
+}
+.skel-line {
+  height: 13px;
+  margin-bottom: 10px;
+}
+.skel-title {
+  height: 30px;
+  width: 46%;
+  margin-bottom: 22px;
+  border-radius: 10px;
+}
+.skel-card {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius);
+}
+.skel-row {
+  display: flex;
+  gap: 20px;
+  padding: 10px 2px 20px;
+}
+.skel-row > * {
+  flex: 0 0 calc((100% - 60px) / 4 - 18px);
+}
+.skel-media {
+  aspect-ratio: 16 / 10;
+  border-radius: 14px;
+  margin-top: 32px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .skel {
+    animation: none;
+  }
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   /* Tablet: ~3 cards across with a peek */
-  .cat__rail .card {
+  .cat__rail .card,
+  .skel-row > * {
     flex: 0 0 calc((100% - 40px) / 3 - 16px);
   }
   .about-section {
@@ -1189,7 +1247,8 @@ a {
   .cat__title {
     font-size: 1.3rem;
   }
-  .cat__rail .card {
+  .cat__rail .card,
+  .skel-row > * {
     flex: 0 0 calc((100% - 20px) / 2 - 16px);
   }
   .project {

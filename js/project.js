@@ -7,6 +7,20 @@
 
   const slug = new URLSearchParams(location.search).get("slug");
 
+  // Placeholder header + first image block while the JSON loads
+  root.innerHTML =
+    '<div class="project__header" aria-hidden="true">' +
+    '<div class="skel skel-line"></div>' +
+    '<div class="skel skel-title"></div>' +
+    "</div>" +
+    '<div class="proj-flow" aria-hidden="true">' +
+    '<div class="proj-text">' +
+    '<div class="skel skel-line"></div><div class="skel skel-line"></div>' +
+    '<div class="skel skel-line"></div>' +
+    "</div>" +
+    '<div class="skel skel-media"></div>' +
+    "</div>";
+
   Portfolio.loadProjects()
     .then((data) => {
       const projects = data.projects || [];
@@ -36,6 +50,8 @@
 
   function renderProject(p) {
     const esc = Portfolio.escapeHtml;
+
+    root.innerHTML = ""; // clear the loading skeleton before appending content
 
     const header = document.createElement("header");
     header.className = "project__header";

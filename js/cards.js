@@ -114,6 +114,25 @@ window.Portfolio = (function () {
     window.addEventListener("load", update);
   }
 
+  // Placeholder markup shown while the JSON request is in flight, so the page
+  // shows its shape immediately instead of an empty column.
+  function skeletonBlocks(rows, cardsPerRow) {
+    let out = "";
+    for (let r = 0; r < rows; r++) {
+      let cards = "";
+      for (let c = 0; c < cardsPerRow; c++) {
+        cards += '<div><div class="skel skel-card"></div></div>';
+      }
+      out +=
+        '<div class="cat" aria-hidden="true">' +
+        '<div class="cat__head"><div class="skel skel-title"></div></div>' +
+        '<div class="skel-row">' +
+        cards +
+        "</div></div>";
+    }
+    return out;
+  }
+
   return {
     PROJECTS_URL,
     escapeHtml,
@@ -121,5 +140,6 @@ window.Portfolio = (function () {
     buildCard,
     buildRailCard,
     wireRailArrows,
+    skeletonBlocks,
   };
 })();
