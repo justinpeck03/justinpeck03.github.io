@@ -1357,13 +1357,52 @@ a {
   .cycling {
     padding: 0 18px;
   }
+  /* Phone: one column, with each photo full width and interleaved after its
+     paragraph. `display: contents` lifts the text/photo wrappers out of the
+     way so their children can be ordered against each other. */
   .cy-bio {
-    grid-template-columns: 1fr;
-    gap: 28px;
+    display: flex;
+    flex-direction: column;
+    /* the desktop rule centres items on the cross axis; stretch them here so
+       the headline and details keep their full-width left alignment */
+    align-items: stretch;
+    gap: 24px;
     padding: 44px 0 56px;
   }
+  .cy-bio__text,
   .cy-bio__photos {
-    grid-template-columns: 1fr 1fr;
+    display: contents;
+  }
+  .cy-bio__headline {
+    order: 0;
+    margin-bottom: 0;
+  }
+  .cy-bio__text p:nth-of-type(1) {
+    order: 1;
+  }
+  .cy-bio__photos img:nth-of-type(1) {
+    order: 2;
+  }
+  .cy-bio__text p:nth-of-type(2) {
+    order: 3;
+  }
+  .cy-bio__photos img:nth-of-type(2) {
+    order: 4;
+  }
+  /* any further paragraphs / photos simply follow, before the details list */
+  .cy-bio__text p:nth-of-type(n + 3) {
+    order: 5;
+  }
+  .cy-bio__photos img:nth-of-type(n + 3) {
+    order: 6;
+  }
+  .cy-bio__details {
+    order: 7;
+    margin-top: 0;
+  }
+  /* the flex gap now provides the rhythm, so drop the stacked margins */
+  .cy-bio__text p {
+    margin-bottom: 0;
   }
   .cy-section {
     padding: 44px 0;
