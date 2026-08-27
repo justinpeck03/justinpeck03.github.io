@@ -66,20 +66,9 @@ a {
 }
 
 .nav__logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
   font-weight: 600;
   font-size: 1.05rem;
   letter-spacing: -0.01em;
-}
-
-/* JP monogram beside the wordmark; both link home */
-.nav__mark {
-  display: block;
-  height: 20px;
-  width: auto;
-  flex: none;
 }
 
 .nav__links {

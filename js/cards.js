@@ -23,7 +23,7 @@ window.Portfolio = (function () {
   function buildCard(project) {
     const a = document.createElement("a");
     a.className = "card";
-    a.href = "project.html?slug=" + encodeURIComponent(project.slug);
+    a.href = encodeURIComponent(project.slug) + ".html";
 
     const media = document.createElement("div");
     media.className = "card__media";
@@ -58,7 +58,7 @@ window.Portfolio = (function () {
   function buildRailCard(project) {
     const a = document.createElement("a");
     a.className = "rail-card";
-    a.href = "project.html?slug=" + encodeURIComponent(project.slug);
+    a.href = encodeURIComponent(project.slug) + ".html";
 
     const media = document.createElement("div");
     media.className = "rail-card__media";

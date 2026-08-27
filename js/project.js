@@ -5,7 +5,9 @@
   const moreGrid = document.getElementById("more-grid");
   if (!root) return;
 
-  const slug = new URLSearchParams(location.search).get("slug");
+  const slug =
+    new URLSearchParams(location.search).get("slug") ||
+    (root && root.dataset.slug);
 
   // Placeholder header + first image block while the JSON loads
   root.innerHTML =
@@ -30,7 +32,7 @@
           '<p class="fallback">Project not found. <a href="work.html">Back to all work</a>.</p>';
         return;
       }
-      document.title = "Justin Peck — " + project.title;
+      document.title = project.title + " — Justin Peck";
       renderProject(project);
       renderMore(projects, project);
     })
